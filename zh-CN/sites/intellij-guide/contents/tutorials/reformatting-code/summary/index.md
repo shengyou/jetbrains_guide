@@ -1,7 +1,7 @@
 ---
 type: TutorialStep
 date: 2021-06-09
-title: Summary
+title: 摘要
 technologies: [ ]
 topics: [ ]
 author: hs
@@ -9,7 +9,7 @@ subtitle: Summary and shortcuts we used
 thumbnail: ./thumbnail.png
 ---
 
-## Summary
+## 摘要
 In this tutorial we have looked at how to apply the [code style settings](https://www.jetbrains.com/help/idea/configuring-code-style.html) in a number of different scenarios including on a per-class basis and before-commit, as well as only reformatting code that you've changed. We've also looked at how to integrate [EditorConfig files](https://editorconfig.org/) into your project and pulled it all together with an example.
 
 You can also take a look at our [IntelliJ IDEA Blog and embedded video on Code Formatting](https://blog.jetbrains.com/idea/2020/06/code-formatting/).

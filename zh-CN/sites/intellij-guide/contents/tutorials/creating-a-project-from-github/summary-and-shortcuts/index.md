@@ -15,8 +15,8 @@ You have now configured an IntelliJ IDEA project from a GitHub repository, with 
 ### Shortcuts Used
 Here are the shortcuts that we used.
 
-| Name                                                                                                    | macOS Shortcut | Windows Shortcut |
-| ------------------------------------------------------------------------------------------------------- | -------------- | ---------------- |
-| Open the [Search everywhere](https://www.jetbrains.com/help/idea/searching-everywhere.html) dialog      | **⇧⇧**         | **Shift+Shift**  |
-| Display or hide the [Git Log tool Window](https://www.jetbrains.com/help/idea/investigate-changes.html) | **⌘9**         | **Alt+9**        |
-| Display or hide the [Project Window](https://www.jetbrains.com/help/idea/project-tool-window.html)      | **⌘1**         | **Alt+1**        |
+| 名称                                                                                                      | macOS 快捷键 | Windows 快捷键     |
+| ------------------------------------------------------------------------------------------------------- | --------- | --------------- |
+| Open the [Search everywhere](https://www.jetbrains.com/help/idea/searching-everywhere.html) dialog      | **⇧⇧**    | **Shift+Shift** |
+| Display or hide the [Git Log tool Window](https://www.jetbrains.com/help/idea/investigate-changes.html) | **⌘9**    | **Alt+9**       |
+| Display or hide the [Project Window](https://www.jetbrains.com/help/idea/project-tool-window.html)      | **⌘1**    | **Alt+1**       |

@@ -15,7 +15,7 @@ We'll create a new project that contains Java code, and use [Spock](https://spoc
 
 Spock tests can be easy to read, and so this framework can be used not only to test application code, but also to document its expected behaviour.
 
-## Other Resources
+## 其他资料
 - [Spock reference documentation](https://spockframework.org/spock/docs/2.0/all_in_one.html).
   - [Blocks](http://spockframework.org/spock/docs/2.0/all_in_one.html#_blocks)
   - [Data Pipes](http://spockframework.org/spock/docs/2.0/all_in_one.html#_data_pipes)

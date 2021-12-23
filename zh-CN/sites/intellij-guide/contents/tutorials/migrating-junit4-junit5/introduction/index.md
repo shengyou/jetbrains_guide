@@ -22,7 +22,7 @@ git clone --branch start-junit-migration https://github.com/JetBrains/intellij-s
 
 *Note: We'll be using IntelliJ IDEA Community Edition for all the steps in this tutorial.*
 
-## Other Resources
+## 其他资料
 - [IntelliJ IDEA Blog - Migrating from JUnit 4 to JUnit 5](https://blog.jetbrains.com/idea/2020/08/migrating-from-junit-4-to-junit-5/)
 - [IntelliJ IDEA Blog - 2017.3 Junit 5 Support](https://blog.jetbrains.com/idea/2017/11/intellij-idea-2017-3-junit-support/)
 - [IntelliJ IDEA Help - List of JUnit inspections in IntelliJ IDEA](https://www.jetbrains.com/help/idea/list-of-java-inspections.html#junit)

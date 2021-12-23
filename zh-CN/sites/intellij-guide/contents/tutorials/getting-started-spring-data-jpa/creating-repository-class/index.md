@@ -1,17 +1,17 @@
 ---
 type: TutorialStep
 date: 2021-06-02
-title: Creating a Repository Interface
+title: 创建仓库接口
 technologies: [ ]
 topics: [ ]
 author: da
-subtitle: Create a Spring Data repository for CRUD operations.
+subtitle: 为 CRUD 操作创建 Spring Data 仓库。
 thumbnail: ./thumbnail.png
 ---
 
-Now that we've created our Employee entity, we need a way to perform our CRUD (Create, Read, Update, Delete) operations. Luckily, Spring Data JPA provides all the basic operations through Repositories. Let's see how they work.
+现在，我们已经创建了我们的员工实体，我们需要一种方法来执行我们的 CRUD（创建、读取、更新、删除）操作。 幸运的是，Spring Data JPA 可以通过 Repositories （仓库）提供所有基本操作。 让我们看看它是如何工作的。
 
-In the **Project** window, we'll select the `com.jetbrains.springdatajpaapp` package and press **Alt**+**Insert** for Windows/Linux or **⌘N** for macOS. Choose **Java Class**. We'll call it `EmployeeRepository` and this time we'll select **Interface** then press **Enter**. In order for our interface to be a repository, we'll need it to extend the `CrudRespository<T, ID>` interface with the generic parameters being our entity class and entity's id type. So for our application, our repository interface definition would be: `public interface EmployeeRepository extends CrudRepository<Employee, Long>`.
+在 **Project（项目）** 窗口中，我们将选择 ` com.jetbrains.springdatajpaapp ` 包，并按 **Alt** + **Insert**（Windows/Linux）或**⌘N**（macOS）。 选择 ** Java Class （Java 类） **。 我们将之命名为 ` EmployeeRepository ` ，这次我们将选择 **Interface（接口）** 然后按 **Enter （回车键）**。 为了使我们的接口类能成为repository，我们需要它来继承 `CrudRespository<T, ID>` 接口，具有我们的实体类和实体的 ID 类型的参数。 因此，对于我们的应用程序，我们的仓库接口定义将是：`public interface EmployeeRepository extends CrudRepository<Employee, Long>`。
 
 We will be using this `EmployeeRepository` interface to perform CRUD operations in our application code. Since we are extending `CrudRepository`, we get access to basic CRUD methods by default. For example, we can call the `save` method to insert an Employee object into our database. We could also call the `findAll` method to list all the Employees in your Employee table. We will see how to do this when we write our application logic.
 
@@ -31,7 +31,7 @@ You might be thinking: if I've defined this interface, don't I have to implement
 
 ![Method Signature Validation](./MethodSignatureValidation.png)
 
-## End Result
+## 最终结果
 
 Your `EmployeeRepository` interface should look like this:
 ```java

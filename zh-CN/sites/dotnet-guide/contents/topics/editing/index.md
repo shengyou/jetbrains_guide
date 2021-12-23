@@ -1,5 +1,5 @@
 ---
-title: Editing
+title: 编辑
 subtitle: Learning resources when writing code in the ReSharper and Rider editor.
 accent: primary
 icon: fas fa-user-edit

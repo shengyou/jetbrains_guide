@@ -29,7 +29,7 @@ Then we will click **Test Connection** to make sure our configuration is valid.
 
 Once we click **OK**, we see a new data source for our H2 database.
 
-## End Result
+## 最终结果
 In the database view, we can now navigate to our Employee table and see all our employee data by double-clicking on the table.
 
 ![Database View](./DatabaseView.png)

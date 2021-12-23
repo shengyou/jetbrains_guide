@@ -1,7 +1,7 @@
 ---
 type: TutorialStep
 date: 2021-06-20
-title: Summary
+title: 摘要
 technologies: [ ]
 topics: [ ]
 author: hs

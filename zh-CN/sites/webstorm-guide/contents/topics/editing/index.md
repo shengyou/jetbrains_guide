@@ -1,5 +1,5 @@
 ---
-title: Editing
+title: 编辑
 subtitle: Learn how to be more productive and write better code
 accent: primary
 icon: fas fa-user-edit

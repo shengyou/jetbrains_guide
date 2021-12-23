@@ -52,7 +52,7 @@ Quick-fixes are available for bits of code that triggered an inspection (code st
 
 We will go deeper into inspections and quick-fixes later on.
 
-### Editing
+### 编辑
 
 While coding, you will spend a lot of time in the [Rider](https://www.jetbrains.com/help/rider/Working_in_the_Editor.html).
 

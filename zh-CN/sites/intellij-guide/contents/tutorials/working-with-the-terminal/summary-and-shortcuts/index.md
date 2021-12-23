@@ -25,7 +25,7 @@ You may also find these links useful:
 ### Shortcuts Used
 Here are some of the shortcuts that we used and some additional ones that you can try out.
 
-| Name                                                                                                      | macOS Shortcut   | Windows Shortcut       |
+| 名称                                                                                                        | macOS 快捷键        | Windows 快捷键            |
 | --------------------------------------------------------------------------------------------------------- | ---------------- | ---------------------- |
 | Add a new file in the Project Window                                                                      | **⌘N**           | **Alt+Insert**         |
 | Open the [Search everywhere](https://www.jetbrains.com/help/idea/searching-everywhere.html) dialog        | **⇧⇧**           | **Shift+Shift**        |

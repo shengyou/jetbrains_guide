@@ -13,7 +13,7 @@ In this tutorial, we created a simple Spring Boot application that uses [Spring 
 
 Some helpful shortcuts mentioned in the tutorial:
 
-| Name                                             | Windows Shortcut    | macOS Shortcut      |
+| 名称                                               | Windows 快捷键         | macOS 快捷键           |
 | ------------------------------------------------ | ------------------- | ------------------- |
 | Create classes and generate constructors/methods | **Alt+Insert**      | **⌘N**              |
 | Context-aware code completion                    | **Ctrl**+**Space**  | **⌃Space**          |

@@ -32,4 +32,4 @@ Press **Enter** or **Clone** to clone the GitHub repository to the directory you
 
 When you open up the project window, you'll also see that IntelliJ IDEA has detected the modules in the project, and correctly set up the _test_, _main_ and _resources_ folders in a Maven project like this one.
 
-![Project Window](project-window.png)
+![项目窗口](project-window.png)

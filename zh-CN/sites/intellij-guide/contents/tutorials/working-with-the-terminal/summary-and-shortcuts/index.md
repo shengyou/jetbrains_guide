@@ -12,7 +12,7 @@ longVideo:
   url: https://youtu.be/tlEkrWU0d1M?start=423
 ---
 
-## Summary
+## 摘要
 [IntelliJ IDEA’s terminal window](https://www.jetbrains.com/help/idea/terminal-emulator.html) is a powerful and helpful tool for developers. It keeps our attention in the same tools which reduces context switching. It makes it easy for us to share things between the editor and the command line. The terminal is integrated allowing us to easily move from the project code to the terminal and back again, and it also can show us alternative ways of doing the same thing, using the IDE’s version of the command line tool.
 
 ![Different Java Home](different-java-home.png)

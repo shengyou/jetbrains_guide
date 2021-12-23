@@ -9,7 +9,7 @@ subtitle: Creating a Project from GitHub Summary
 thumbnail: ./thumbnail.png
 ---
 
-## Summary
+## 摘要
 You have now configured an IntelliJ IDEA project from a GitHub repository, with all the relevant remotes added, and a Git log window that shows the current status of the remote repositories. You are now ready to start making changes to this project and to commit, push, and create pull requests.
 
 ### Shortcuts Used

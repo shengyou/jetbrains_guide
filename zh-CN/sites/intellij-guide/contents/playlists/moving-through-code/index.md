@@ -1,12 +1,12 @@
 ---
 label: 20
 date: 2021-07-13
-title: Moving Through Your Code
+title: 在代码中移动
 technologies: [ ]
 topics:
   - navigation
 author: hs
-subtitle: Tips for moving through and navigating your code base
+subtitle: 在代码库中移动和导航的小技巧
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 playlistItems:
@@ -19,6 +19,6 @@ playlistItems:
   - /tips/f2/
 ---
 
-There are two screencasts on Navigation which you may also find useful:
-- [Top 5 IntelliJ IDEA Navigation Shortcuts](https://youtu.be/crnEBqbBWuo)
-- [Navigation in IntelliJ IDEA](https://youtu.be/1UHsJyCq1SU)
+以下两个视频对学习导航技巧也很有帮助：
+- [前 5 大 IntelliJ IDEA 导航快捷键（Top 5 IntelliJ IDEA Navigation Shortcuts）](https://youtu.be/crnEBqbBWuo)
+- [在 IntelliJ IDEA 中导航](https://youtu.be/1UHsJyCq1SU)

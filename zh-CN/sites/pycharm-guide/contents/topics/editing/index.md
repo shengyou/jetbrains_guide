@@ -1,5 +1,5 @@
 ---
-title: Editing
+title: 编辑
 subtitle: Learning resources when writing code in PyCharm's editor
 accent: primary
 icon: fas fa-user-edit

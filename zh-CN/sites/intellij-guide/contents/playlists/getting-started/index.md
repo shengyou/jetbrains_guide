@@ -1,13 +1,13 @@
 ---
 label: 20
 date: 2021-07-13
-title: Getting Started with IntelliJ IDEA
+title: IntelliJ IDEA 入门指南
 technologies:
   - java
 topics:
   - gettingstarted
 author: hs
-subtitle: Tips for getting started with IntelliJ IDEA
+subtitle: 带您快速入门 IntelliJ IDEA 的小技巧
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 playlistItems:
@@ -22,4 +22,4 @@ playlistItems:
   - /tips/commit-changes/
 ---
 
-You can find more information on getting started with IntelliJ IDEA in [our playlist](https://www.youtube.com/playlist?list=PLPZy-hmwOdEXdOtXdFzyx_XCnrF_oD2Ft) on our YouTube channel.
+您可以在 JetBrains 官方频道上的 [播放列表](https://www.youtube.com/playlist?list=PLPZy-hmwOdEXdOtXdFzyx_XCnrF_oD2Ft) 找到有关入门 IntelliJ IDEA 的更多信息。

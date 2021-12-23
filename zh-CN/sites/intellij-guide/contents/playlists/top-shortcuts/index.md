@@ -1,5 +1,5 @@
 ---
-label: 20
+label: 30
 date: 2021-11-01
 title: 常用快捷键
 technologies: [ ]

@@ -7,7 +7,7 @@ technologies:
 topics:
   - latest
 author: tg
-subtitle: Tips to get you productive with the new or improved features in IntelliJ IDEA 2021.1
+subtitle: 让您更高效的使用 IntelliJ IDEA 2021.1 新特性的小技巧
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 playlistItems:
@@ -33,4 +33,4 @@ playlistItems:
   - /tips/create-a-correct-sealed-child/
 ---
 
-There's a new release of IntelliJ IDEA three times a year. See the highlights of the current release with this list of tips, or see [What's New](https://www.jetbrains.com/idea/whatsnew/) for more detailed information.
+IntelliJ IDEA 每一年会发布三次新版本， 请参阅这个小技巧列表以了解这个版本的亮点，或浏览 [最新消息](https://www.jetbrains.com/zh-cn/idea/whatsnew/) 以取得更多信息

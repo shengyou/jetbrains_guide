@@ -20,7 +20,7 @@ longVideo:
 
 如果您之前还没有打开项目， **New Project（新建项目）** 选项位于欢迎屏幕中：
 
-![Welcome Screen - New Project Highlighted](welcome-screen.png)
+![欢迎屏幕 - 高亮显示新项目](welcome-screen.png)
 
 如果您以前已打开了一个项目， **New Project（新建项目）** 按钮将在顶部栏上。
 
@@ -28,30 +28,30 @@ longVideo:
 
 2）您需要创建一个 Java 项目，这是默认的选项。 您还需要从项目 SDK 下拉菜单中选择一个 JDK 用于编译此项目：
 
-![Java Project and JDK selection](java-select-jdk.png)
+![Java 项目和 JDK 选择](java-select-jdk.png)
 
 IntelliJ IDEA 将在列表的顶部显示已配置的 JDK 列表，并在列表的底部显示它在您的机器上检测到的 JDK 的列表。 您可以选择其中的任何一个，或者您可以点击 **Download JDK（下载 JDK）**。
 
 有许多不同的供应商打包和提供 Java。 该列表显示了一些最常见的。 OpenJDK 是 Oracle 的免费、开放的 JDK 构建，它将永远是最新的版本。 如果您选择另一个供应商，比如说 Adopt OpenJDK，您将看到该供应商所有可用的版本。
 
-![Different JDK Vendors](different-jdk-vendors.png)
+![不同 JDK 供应商](different-jdk-vendors.png)
 
-This tutorial doesn't need the latest version of Java, so feel free to select the one you're most comfortable with. Finally, if you want to use a JDK that's on your machine, but hasn't been detected by IntelliJ IDEA, you can press **Add JDK** to browse to it.
+此教程不需要最新版本的 Java，所以请自由选择您最熟悉的版本。 最后，如果您想要使用您的机器上的 JDK，但它尚未被 IntelliJ IDEA 检测到，您可以按 **Add JDK（添加 JDK）** 来浏览它。
 
-The IDE will spend a bit of time downloading and installing the Java Development Kit if you opted to download a JDK. You don't need to do any additional configuration once it's downloaded, IntelliJ IDEA handles that for you.
+如果您选择下载 JDK，IDE 将花费一点时间下载和安装 Java 开发套件。 您不需要进行任何额外的配置，一旦下载完成，IntelliJ IDEA 会为您处理。
 
-3) You don't need any additional libraries or frameworks for this tutorial so press **Next**
+3）在该教程里，您不需要任何额外的库或框架，所以按 **Next（下一步）**
 
 
-4) You could create a project from a template, but we're going to do everything from scratch for this tutorial, so press **Next**.
+4）您可以从模板里创建一个项目，但是在该教程里，我们要从零开始做一切事情，所以按 **Next（下一步）**。
 
-   ![No templates selected](no-templates.png)
+   ![未选择模板](no-templates.png)
 
-5) You need to give your project a name. We recommend _HelloWorld_. You could change the default project location if you want to, but the default is fine for this tutorial.
+5）您需要给项目起个名字。 我们推荐 _HelloWorld_。 如果您愿意，您可以更改默认的项目位置，但是对于该教程来说，默认的位置是可以的。
 
-   ![Name Project HelloWorld](name-hello-world.png)
+   ![项目名称：HelloWorld](name-hello-world.png)
 
-6) Press **Finish** so IntelliJ IDEA can create your project.
+6）按 **Finish（完成）** 来让 IntelliJ IDEA 创建您的项目。
 
 
 ---

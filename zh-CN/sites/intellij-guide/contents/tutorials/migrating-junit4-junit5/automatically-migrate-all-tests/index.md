@@ -1,26 +1,26 @@
 ---
 type: TutorialStep
 date: 2021-08-09
-title: Automatically migrating tests
+title: 自动迁移测试
 technologies: [ ]
 topics: [ ]
 author: hs
-subtitle: Let IntelliJ IDEA migrate as many tests as possible automatically
+subtitle: 让 IntelliJ IDEA 自动迁移尽可能多的测试
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
   url: https://youtu.be/F8UTTTDtbH0?start=452
 ---
 
-Now we understand the individual steps to migrate a test, we can be a bit more ambitious with our migration. Let's try to automatically migrate all our tests. Use Find Action with **⌘⇧A** (macOS), or **Ctrl+Shift+A** (Windows/Linux),  and type Migrate, to see migration options for the code. IntelliJ IDEA offers the option to migrate the code from JUnit 4 to 5.
+现在，我们了解迁移测试的各个步骤，可以考虑更进一步。 让我们尝试自动迁移我们所有的测试。 按下 **⌘⇧A**（macOS）, 或 **Ctrl+Shift+A**（Windows/Linux）打开操作查找，输入“迁移”查看代码的迁移选项。 IntelliJ IDEA 提供了将代码从 Junit 4 迁移到 5 的选项。
 
 ![migrate.png](migrate.png)
 
-This migration is similar to what we did with the individual test class, but for all test classes. Press **Run** to see the refactoring preview. You can exclude specific classes or methods here using if you want to using **⌫**, or **Delete**. Press Do Refactor to do the refactoring.
+这种迁移类似于我们做过的单独测试类，但是这次是对于所有测试类。 按 ** 运行 **，查看重构预览。 您可以使用**⌫**，或 **Delete**，在此处排除特定的类或方法。 按 “Do Refactor”（重构）按钮以执行重构。
 
 ![refactoring_preview.png](refactoring_preview.png)
 
-We want to check all our tests still work as before, so run them using **⌃⇧R** (macOS), or **Ctrl+Shift+F10** (Windows/Linux) as before. You can also right-click on the 'tests' folder and select Run 'All Tests'.  The Test Results window shows us the outcome of running the tests.
+我们希望所有的测试仍然像以前一样工作，按 **⌃⇧R**（macOS），或 **Ctrl+Shift+F10** (Windows/Linux)来运行。 You can also right-click on the 'tests' folder and select Run 'All Tests'.  The Test Results window shows us the outcome of running the tests.
 
 ![run_tests.png](run_tests.png)
 

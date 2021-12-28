@@ -16,7 +16,7 @@ longVideo:
 
 项目窗口显示构成我们项目的所有目录和文件。
 
-![Project Window](project-window.png)
+![项目窗口](project-window.png)
 
 当然，您可以使用鼠标来浏览项目窗口，但是您也可以使用方向键。 您还可以在 macOS 上使用 **Cmd**+**1** ，或在 Windows/Linux 上 **Alt**+**1** 切换是否显示该工具窗口。
 
@@ -26,17 +26,17 @@ longVideo:
 
 1) 要创建一个新类，请选择蓝色的 src 文件夹，在 macOS 上按 **Cmd**+**N** ，或在 Windows/Linux 上按 **Alt**+**Insert**。 从弹出窗口里选择 _Java Class（Java 类）_ 。
 
-![New Java class](new-java-class.png)
+![创建新的类](new-java-class.png)
 
 您可以在此处输入一个简单的类名，但如果您要在特定的包中创建新的类的话，您可以输入按点分隔的整个包路径，然后输入类名。 例如 `com.example.helloworld.HelloWorld`。
 
-![New package and class](new-package-and-class.png)
+![新包和类](new-package-and-class.png)
 
 在这里， `example` 可以是您想使用的域名， `HelloWorld` 是您的 Java 类的名字，来让 IntelliJ IDEA 创建它。
 
 当您按下 **Enter**，IntelliJ IDEA 将创建您想要的包，以及您指定的此包的正确目录结构。 它还创建了一个新的 `HelloWorld.java` 文件，并生成了此类文件的基本内容。 例如，包语句和类声明，这个类与文件具有相同的名称。
 
-![New project and class created in IntelliJ IDEA](new-project-and-class-idea.png)
+![在 IntelliJ IDEA 中创建的新项目和类](new-project-and-class-idea.png)
 
 
 ### 编码您的 HelloWorld 类
@@ -47,17 +47,17 @@ longVideo:
 
 **注意**： 按下 **Escape** 总是会关闭一个下拉菜单或者对话框， 且不做改变。
 
-![Main method live template](main-live-template.png)
+![主要方法实时模板](main-live-template.png)
 
 3) 按 **Enter** 来选择它。 IntelliJ IDEA 将为您生成代码的其余部分。
 
-![Main method created](main-method-created.png)
+![已创建主要方法](main-method-created.png)
 
 4) 现在，您需要调用一个方法，将一些文本打印到标准系统输出。
 
 IntelliJ IDEA 为您提供 [代码完成](https://www.jetbrains.com/help/idea/auto-completing-code.html)。 如果您输入 `Sy`，您会看到一个下拉菜单显示您可能想要调用的类。 您需要 `System` ，那么您可以在高亮的选项下按 **Control**+**.**。
 
-![System using code completion](system-code-completion.png)
+![使用代码完成的系统](system-code-completion.png)
 
 **注意**：它对大小写敏感，输入 `sy` 而不是 `Sy` 会给您不同的结果！
 
@@ -69,7 +69,7 @@ IntelliJ IDEA 为您提供 [代码完成](https://www.jetbrains.com/help/idea/au
 
 7) IntelliJ IDEA 也会把文本光标放在括号里，这样您就可以提供方法的实参。 输入一个引号 `"`，IntelliJ IDEA 将为您输出一对引号。 现在您可以在引号之间输入您的文本—— `Hello World`。
 
-![Hello World statement](hello-world-statement.png)
+![Hello World 语句](hello-world-statement.png)
 
 **注意**：除了以上的步骤，您也可以输入 `sout` ，来使用 [实时模板](https://www.jetbrains.com/help/idea/using-live-templates.html)，该模板将为您创建代码构造，但我们想向您展示代码补全的功能！
 

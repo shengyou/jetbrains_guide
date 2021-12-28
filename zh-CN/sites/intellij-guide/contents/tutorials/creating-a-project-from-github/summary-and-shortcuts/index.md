@@ -1,7 +1,7 @@
 ---
 type: TutorialStep
 date: 2021-11-09
-title: Summary and Shortcuts
+title: 总结和快捷键
 technologies: [ ]
 topics: [ ]
 author: hs

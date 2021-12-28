@@ -1,11 +1,11 @@
 ---
 type: TutorialStep
 date: 2021-10-13
-title: Summary and Shortcuts
+title: 总结和快捷键
 technologies: [ ]
 topics: [ ]
 author: hs
-subtitle: Everything we covered in this tutorial including help links and shortcuts.
+subtitle: 我们在本教程中涉及的所有内容，包括帮助的链接和快捷键。
 thumbnail: ./thumbnail.png
 ---
 

@@ -9,7 +9,7 @@ subtitle: Invoking Reformat Code on a class and viewing the results
 thumbnail: ./thumbnail.png
 ---
 
-## A Before and After Example of Code Rearrangement
+## 代码重新排列前后的示例
 Let's take a look at some code that we will reformat. We will use Java 8 Streams for this. At the moment, our Code Style settings mean that our stream operators are long chained method calls which makes for an extremely long line of code:
 
 ```java

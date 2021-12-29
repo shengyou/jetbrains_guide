@@ -1,7 +1,7 @@
 ---
 type: TutorialStep
 date: 2021-08-11
-title: Shortcuts
+title: 关于快捷键
 technologies: [ ]
 topics: [ ]
 author: tg

@@ -8,7 +8,7 @@ topics:
   - editing
   - inspections
 author: tg
-subtitle: Use inspections to convert classes to Java 16 records
+subtitle: 使用检查将class转换为 Java 16 的record
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:

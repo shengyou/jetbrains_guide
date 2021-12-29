@@ -1,6 +1,6 @@
 ---
 date: 2021-11-01
-title: Run Anything
+title: 运行一切
 technologies: [ ]
 topics:
   - interface

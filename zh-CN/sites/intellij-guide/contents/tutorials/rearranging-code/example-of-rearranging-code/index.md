@@ -1,41 +1,41 @@
 ---
 type: TutorialStep
 date: 2021-09-20
-title: Example of Moving Code Around
+title: 移动代码的例子
 technologies: [ ]
 topics: [ ]
 author: hs
-subtitle: Invoking Rearrange Code on a Class and Viewing the results
+subtitle: 在一个类上调用重新排列代码并查看结果
 thumbnail: ./thumbnail.png
 ---
 
-## A Before and After Example of Code Rearrangement
-Let's modify the code arrangement settings for this example. Specifically we want to create a new rule that puts private methods at the bottom of each class.
+## 代码重新排列前后的示例
+让我们为这个例子修改代码排列设置。 具体来说，我们希望创建一个新的规则，将 private 方法放置在每个类的底部。
 
-### Modifying the Existing Rule Arrangement
-You can change your rule arrangement preferences with **⌘,** (macOS), **Ctrl+Alt+S** (Windows/Linux) and then searching for _arrangement_. Select **Editor > Code Style > Java** from the filtered list and then the **Arrangement** tab.
+### 修改现有的排列规则
+您可以使用 **⌘,**（macOS）或 **Ctrl+Alt+S**（Windows/Linux），然后搜索 _arrangement（排列）_来变更您的排列规则偏好设置。 从过滤列表中选择 **Editor（编辑器）> Code Style（代码样式）> Java**，然后选择 **Arrangement（排列）**标签。
 
-### Arrangement Settings/Preferences
-To change your code arrangement settings, use **⌘,** (macOS), **Ctrl+Shift+S** (Windows/Linux), to bring up the Preferences/Settings dialog. This dialog is searchable, so you can type in _arrangement_. This filters the dialog to **Code Style**. You can then select the language you're working with. In this tutorial we will use **Java**. Alternatively, you can navigate to **Editor > Code Style > Java**.
+### 排序设置/偏好设置
+要修改您的代码排列的设置，使用 **⌘,**（macOS）或 **Ctrl+Shift+S**（Windows/Linux）打开偏好设置/设置对话框。 这个对话框是可以搜索的，所以您可以输入 _arrangement（排列）_。 这可以把对话框过滤到 **Code Style（代码样式）**。 然后您可以选择您正在使用的语言。 在这个教程中，我们将使用 **Java**。 或者您可以导航到 **Editor（编辑器）> Code Stytle（代码样式）> Java**。
 
-The Arrangement tab is grouped into two areas:
-- [Grouping Rules](#grouping-rules)
-- [Matching Rules](#matching-rules)
+排列标签可以分为两个区域：
+- [分组规则](#grouping-rules)
+- [匹配规则](#matching-rules)
 
-#### Grouping Rules
-IntelliJ IDEA allows you to group these three code elements:
+#### 分组规则
+IntelliJ IDEA 允许您对这三个代码元素进行分组：
 
-**Getters and Setters** is fairly self-explanatory. When this checkbox is selected, and you invoke rearrange code, your getters and setters will be grouped together in your class. This is enabled by default.
+**Getters and Setters（getter 和 setter）** 是相当不言自明的。 当选择此复选框，并调用重排代码时，您的 getter 和 setter 将在您的类中被分组在一起。 这是默认选项。
 
-**Override methods** is similar to Getters and Setters in that it will group your Override methods together in your class. You also have the option to order them by the order they are defined in the super class or interface, or to order them by name. For our example let's select this checkbox.
+**Override methods（重写方法）**类似 Getters 和 Setters，因为它将在您的类中将您的重写方法分组在一起。 您还可以使用根据它们在超类或者接口的顺序的选项来排序它们，或者根据它们的名字排序。 在我们的例子里，让我们选择此复选框。
 
-**Dependent methods** has a drop-down that allows you to select breadth-first or depth-first for method coupling. You may have a use-case for this option, but for most Java code bases that have evolved over time, trying to keep _related_ methods together is not usually what you want to do. If you do choose to use this option then it will take priority over Matching Rules. We suggest you use this option or Matching Rules, not both. In our example we're going to use Matching Rules defined in the next section as this is a more common real-world scenario.
+**Dependent methods（依赖方法）** 有下拉框，可以允许您选择广度优先或者深度优先的方式来组合方法。 您可能有此选项的用例，但对于大多数随着时间的推移而演变的 Java 代码库，尝试将_相关_的方法放在一起通常不是您想要做的。 如果您选择使用此选项，则它会优先于匹配规则。 我们建议您使用此选项或匹配规则，而不是两者都使用。 在我们的示例中，我们将使用下一节中定义的匹配规则，因为这是一个更常见的真实场景。
 
-#### Matching Rules
-This is where you can define how you'd like your classes to be ordered when you invoke rearrange code. You can select any line and move it up or down as required with the arrows in the top-right. You can also click the pencil icon to the right of each row to alter the rule and select a finer level of granularity.
+#### 匹配规则
+这里您可以定义当您使用重新排列代码时，您希望您的类如何被排序。 您可以选择一行，并根据需要用右上角的箭头向上或向下移动。 您也可以点击每一行右边的铅笔图标来修改规则，选择更精细的粒度。
 
-### Adding a New Arrangement Rule
-To add our new rule, go down to rule 22 and press the **+** button. This will place the new rule below 22. Select Type: **method** and Modifier: **private**. You can give it a name if required but both the type and modifier are displayed so that may not be necessary for this example.
+### 添加新的排列规则
+要添加我们的新规则，请滑到规则 22 并按下 **+** 按钮。 这将使新规则在 22 之下。 选择类型：**method（方法）** 和修饰符：**private**。 如果需要的话，您可以给它起个名字，但是类型和修饰符都显示了，所以对这个例子来说可能没有必要。
 
 ![New rule for private methods](new_arrangement_rule.png)
 

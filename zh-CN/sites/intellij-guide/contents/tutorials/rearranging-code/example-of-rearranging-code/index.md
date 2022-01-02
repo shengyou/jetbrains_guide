@@ -39,16 +39,16 @@ IntelliJ IDEA 允许您对这三个代码元素进行分组：
 
 ![New rule for private methods](new_arrangement_rule.png)
 
-Now we've modified our [code arrangement](https://www.jetbrains.com/help/idea/reformat-and-rearrange-code.html#arrange_code) let's take a look at what it looks like. Note our specific rule here that puts `private` methods at the bottom of the class which can be very useful. You can see this in rule 23.
+现在我们已经修改了我们的[代码排列](https://www.jetbrains.com/help/idea/reformat-and-rearrange-code.html#arrange_code)，让我们来看看它是什么样子的。 请注意，我们在这里的具体规则把 `private` 方法放在类的底部，这可能是非常有用的。 您可以在规则 23 中看到这一点。
 
-Given you can't scroll a screenshot, here is the order in text form, so you can see what's happening:
+鉴于您无法滚动屏幕截图，以下是顺序的文本形式，这样您就可以查看发生了什么：
 
 |  |  |  |  |  |
 |  |  |  |  |  |
 |  |  |  |  |  |
  1 | field | public | static | final | 2 | field | protected | static | final | 3| field | package private | static | final| 4| field | private | static | final| 5| field | public | static | | 6| field | protected | static | | 7| field | package private | static | | 8| field | private | static | | 9| initializer block | static | | | 10| field | public | final | | 11| field | protected | final | | 12| field | package private | final | | 13| field | private | final | | 14| field | public | | | 15| field | protected | | | 16| field | package private | | | 17| field | private | | | 18| field | | | | 19| initializer block | | | | 20| constructor | | | | 21| method | static | | | 22| method | | | | 23| method | private | | | 24| enum | | | | 25| interface | | | | 26| class | static | | | 27| class | | | |
 
-Here's the code that we're going to rearrange. As you can see, the getter and setter methods are not together, private methods are in the middle of the class and override methods are also scattered throughout the class.
+下面是我们要重新排列的代码。 正如您所看到的，getter 和 setter 方法不在一起，private 方法在类的中间，重写方法也分散在类中。
 
 ```java
 public class RearrangeCode {
@@ -74,7 +74,7 @@ public class RearrangeCode {
     private String firstName;
 
     private void privateHelperMethod() {
-        // does something in here
+        // 在这里做点什么
     }
 
     public void setId(int id) {
@@ -151,18 +151,22 @@ public class RearrangeCode {
 
 ```
 
-Let's invoke [rearrange code](https://www.jetbrains.com/help/idea/reformat-and-rearrange-code.html#arrange_code) with **⌘⇧A** (macOS), or **Ctrl+Shift+A** (Windows/Linux). In the Find Actions dialog you can type in _Rearrange Code_:
+让我们使用 **⌘⇧A**（macOS）或 **Ctrl+Shift+A**（Windows/Linux）调用
+ **rearrange code（重新排列代码）</a>。 在查找操作对话框中，您可以输入 _Rearrange Code（重新排列代码）_：</p> 
 
 ![Rearrange Code](rearrange-code.png)
 
 Press **Enter** on **Rearrange Code** option to apply the settings to the whole class.
 
 When you do this, the code will be rearranged (see below). Here is a list of changes:
+
 - All the fields have moved to the top of the class because that's what we specified in our grouping rows 1-8.
 - The getter and setter methods are grouped because IntelliJ IDEA has grouped them together from the grouping rules.
 - The Override methods have been grouped together because we specified we wanted to keep them together in the grouping rules). The Override methods are also implemented in the order they appear in the Object super class.
 - Next are the remaining two public methods, which are obeying line 22 of our matching rules.
 - Finally, there's the private method which is obeying line 23 of our matching rules.
+
+
 
 ```java
 public class RearrangeCode {
@@ -259,5 +263,9 @@ public class RearrangeCode {
 
 
 ```
+
+
+
 ## Rearranging Just Code You've Changed
+
 Now you've seen a worked example of rearranging a whole class, let's take a look at the use-case for only rearranging code that you've edited rather than the whole class. 

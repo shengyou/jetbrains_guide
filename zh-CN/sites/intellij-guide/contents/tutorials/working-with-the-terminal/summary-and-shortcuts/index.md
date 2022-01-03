@@ -22,8 +22,8 @@ You may also find these links useful:
 - [Terminal Help Documentation](https://www.jetbrains.com/help/idea/terminal-emulator.html/)
 
 
-### Shortcuts Used
-Here are some of the shortcuts that we used and some additional ones that you can try out.
+### 使用的快捷键
+以下是我们使用的一些快捷键以及一些您可以尝试的额外的快捷键。
 
 | 名称                                                                                                        | macOS 快捷键        | Windows 快捷键            |
 | --------------------------------------------------------------------------------------------------------- | ---------------- | ---------------------- |

@@ -16,28 +16,28 @@ longVideo:
 
 Let's look at how we can enable version control for our project, authenticate with GitHub, create our first commit, and share our project on GitHub in one step.
 
-### Sharing a Project on GitHub
+### 分享项目到 GitHub
 
-You can use IntelliJ IDEA to create a local Git repository and then share the project on GitHub by going to **VCS >  Share project on GitHub** in the menu.
+您可以使用 IntelliJ IDEA 来创建一个本地的 Git 仓库，然后使用菜单上的 **VCS >  Share Project on GitHub（在 GitHub 上共享项目）**来分享项目到 GitHub 上。
 
-![Share Project on GitHub](share-project-github.png)
+![在 GitHub 上共享项目](share-project-github.png)
 
-This displays the Share Project on GitHub dialog. Here you can give your GitHub repository a name (must be unique in your repository), choose if you want it to be private, change the Remote (we recommend you don't), and give your project an optional description.
+这会在 GitHub 对话框上显示项目分享的相关内容。 Here you can give your GitHub repository a name (must be unique in your repository), choose if you want it to be private, change the Remote (we recommend you don't), and give your project an optional description.
 
 ### Optional - Authenticating with GitHub
 If you're not already authenticated with GitHub you will see an additional _Add Account_ link which has different options:
 
 ![Add GitHub Account](share-add-account.png)
 
-We'll focus on the top two options in this tutorial. Firstly, if you select **Log in via GitHub**, a window will open in your default browser asking you to log in to your GitHub account and authenticate it with IntelliJ IDEA.
+我们将重点介绍本教程中的前两个选项。 首选，如果您选择 **Log in via GitHub（通过 GitHub 登录）**，将在您的默认的浏览器上打开一个窗口，要求您登录您的 GitHub 帐户并通过 IntelliJ IDEA 进行身份验证。
 
-Alternatively, you can select **Log in with Token** to open the Add GitHub account dialog. Here when you press **Generate** a window will open in your default browser asking you to log in to your GitHub account, and then you can generate a token for use in IntelliJ IDEA. You can follow the instructions on GitHub to do this. Once you have generated the token you can paste it back into the dialog to authenticate with GitHub.
+或者您可以选择 **Log in with Token（通过令牌登录）**来打开添加 GitHub 帐户的对话框。 您可以在这里按 **Generate（生成）**，在您的默认的浏览器上打开一个窗口，要求您登录您的 GitHub 帐户，然后您可以生成一个令牌以在 IntelliJ IDEA 中使用。 您可以按照 GitHub 上的说明执行此操作。 当您生成令牌后，您可以将其粘贴回对话框中，以便与 GitHub 进行身份验证。
 
-Both these methods achieve the same result in that they allow IntelliJ IDEA to authenticate with GitHub.
+这两种方法都实现了相关的结果，因为它们都允许 IntelliJ IDEA 与 GitHub 进行身份验证。
 
 Tip: if you have multiple GitHub accounts, you can [add your GitHub accounts](https://www.jetbrains.com/help/idea/github.html) in the Settings/Preferences with **⌘,** (macOS), or **Ctrl+Alt+S** (Windows/Linux) and then search for _GitHub_. You can use the **+** to add multiple GitHub accounts.
 
-### Creating a Repository on GitHub
+### 在 GitHub 上创建仓库
 
 Now you can press **Enter** or click **Share**, IntelliJ IDEA will go ahead and create that repository on your GitHub profile.
 
@@ -48,7 +48,7 @@ The IDE will ask you which files you want to put into this first commit. You cou
 
 Everything else looks good to commit, you can use the default commit message and click **Enter** to commit it.
 
-### Sharing a Project on GitHub
+### 分享项目到 GitHub
 
 IntelliJ IDEA creates a local Git repository for the project and then pushes it to your GitHub profile as a new repository with the details you just entered.
 

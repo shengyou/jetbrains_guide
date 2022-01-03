@@ -37,7 +37,7 @@ IntelliJ IDEA 允许您对这三个代码元素进行分组：
 ### 添加新的排列规则
 要添加我们的新规则，请滑到规则 22 并按下 **+** 按钮。 这将使新规则在 22 之下。 选择类型：**method（方法）** 和修饰符：**private**。 如果需要的话，您可以给它起个名字，但是类型和修饰符都显示了，所以对这个例子来说可能没有必要。
 
-![New rule for private methods](new_arrangement_rule.png)
+![私有方法的新规则](new_arrangement_rule.png)
 
 现在我们已经修改了我们的[代码排列](https://www.jetbrains.com/help/idea/reformat-and-rearrange-code.html#arrange_code)，让我们来看看它是什么样子的。 请注意，我们在这里的具体规则把 `private` 方法放在类的底部，这可能是非常有用的。 您可以在规则 23 中看到这一点。
 
@@ -154,32 +154,45 @@ public class RearrangeCode {
 让我们使用 **⌘⇧A**（macOS）或 **Ctrl+Shift+A**（Windows/Linux）调用
  **rearrange code（重新排列代码）</a>。 在查找操作对话框中，您可以输入 _Rearrange Code（重新排列代码）_：</p> 
 
-![Rearrange Code](rearrange-code.png)
+![重新排列代码](rearrange-code.png)
 
-Press **Enter** on **Rearrange Code** option to apply the settings to the whole class.
+在**Rearrange Code （重新排列代码）**选项上按 **Enter** 来应用到当前的整个类中。
 
-When you do this, the code will be rearranged (see below). Here is a list of changes:
+当您这样做时，代码将被重新排列（见下文）。 以下是更改列表：
 
-- All the fields have moved to the top of the class because that's what we specified in our grouping rows 1-8.
-- The getter and setter methods are grouped because IntelliJ IDEA has grouped them together from the grouping rules.
-- The Override methods have been grouped together because we specified we wanted to keep them together in the grouping rules). The Override methods are also implemented in the order they appear in the Object super class.
-- Next are the remaining two public methods, which are obeying line 22 of our matching rules.
-- Finally, there's the private method which is obeying line 23 of our matching rules.
+- 所有的字段都移到了类的顶部，因为这是我们在分组行 1-8 中指定的。
+- getter 和 setter 方法被分组，因为 IntelliJ IDEA 根据分组规则将其分组在一起。
+- 重写方法已分组在一起，因为我们在分组规则中指定要把它们放在一起。 重写方法也按照它们在 Object 超类中出现的顺序实现。
+- 接下来是剩下的两个 public 方法，它们遵守了我们匹配规则的第 22 行。
+- 最后，还有一个 private 方法，它遵守我们匹配规则的第 23 行。
 
 
 
 ```java
 public class RearrangeCode {
     private int id;
-    private String firstName;
-    private String middleName;
-    private String lastName;
-    private String phone;
-    private String notes;
-    private Collection<Order> ordersById;
 
     public int getId() {
         return id;
+    }
+
+    @Override
+    public String toString() {
+        return "RearrangeCode{" +
+               "id=" + id +
+               ", firstName='" + firstName + '\'' +
+               ", middleName='" + middleName + '\'' +
+               ", lastName='" + lastName + '\'' +
+               ", phone='" + phone + '\'' +
+               ", notes='" + notes + '\'' +
+               ", ordersById=" + ordersById +
+               '}';
+    }
+
+    private String firstName;
+
+    private void privateHelperMethod() {
+        // 在这里做点什么
     }
 
     public void setId(int id) {
@@ -187,6 +200,8 @@ public class RearrangeCode {
         System.out.println(newID);
         this.id = id;
     }
+
+    private String middleName;
 
     public String getMiddleName() {
         return middleName;
@@ -196,9 +211,13 @@ public class RearrangeCode {
         this.middleName = middleName;
     }
 
+    private String lastName;
+
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
+
+    private String phone;
 
     public String getPhone() {
         return phone;
@@ -208,17 +227,14 @@ public class RearrangeCode {
         this.phone = phone;
     }
 
+    private String notes;
+
     public String getNotes() {
         return notes;
     }
 
     public void setNotes(String notes) {
         this.notes = notes;
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(id, firstName, middleName, lastName, phone, notes, ordersById);
     }
 
     @Override
@@ -236,17 +252,11 @@ public class RearrangeCode {
     }
 
     @Override
-    public String toString() {
-        return "RearrangeCode{" +
-               "id=" + id +
-               ", firstName='" + firstName + '\'' +
-               ", middleName='" + middleName + '\'' +
-               ", lastName='" + lastName + '\'' +
-               ", phone='" + phone + '\'' +
-               ", notes='" + notes + '\'' +
-               ", ordersById=" + ordersById +
-               '}';
+    public int hashCode() {
+        return Objects.hash(id, firstName, middleName, lastName, phone, notes, ordersById);
     }
+
+    private Collection<Order> ordersById;
 
     public Collection<Order> getOrdersById() {
         return ordersById;
@@ -255,10 +265,6 @@ public class RearrangeCode {
     public void setOrdersById(Collection<Order> ordersById) {
         this.ordersById = ordersById;
     }
-
-    private void privateHelperMethod() {
-        // does something in here
-    }
 }
 
 
@@ -266,6 +272,6 @@ public class RearrangeCode {
 
 
 
-## Rearranging Just Code You've Changed
+## 重新排列刚刚您已经更改的代码
 
-Now you've seen a worked example of rearranging a whole class, let's take a look at the use-case for only rearranging code that you've edited rather than the whole class. 
+现在您已经看到了重新排列整个类的一个工作示例，让我们来看看只重新排列您所编辑的代码，而不是整个类的用例。 

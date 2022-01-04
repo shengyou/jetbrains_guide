@@ -5,13 +5,13 @@ title: 关于快捷键
 technologies: [ ]
 topics: [ ]
 author: tg
-subtitle: Shortcuts used in the tutorial
+subtitle: 教程中使用的快捷键列表
 thumbnail: ./thumbnail.png
 ---
 
 In this tutorial we saw an overview of the [support for Maven projects](https://www.jetbrains.com/help/idea/maven-support.html) in IntelliJ IDEA, and some tips for working effectively with them.
 
-Some helpful shortcuts mentioned in the tutorial and video:
+教程和视频中提到的一些有用的快捷键：
 
 | 名称                                                                                                                                                                                                     | macOS 快捷键 | Windows 快捷键      |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------- | ---------------- |
@@ -21,6 +21,6 @@ Some helpful shortcuts mentioned in the tutorial and video:
 | [Find action](https://www.jetbrains.com/help/idea/working-with-source-code.html#99e55be9) (can use this to open the Maven Tool Window)                                                                 | **⌘⇧A**   | **Ctrl+Shift+A** |
 | [Recent files](https://www.jetbrains.com/help/idea/discover-intellij-idea.html#recent-files) (can use this to open the Maven Tool Window)                                                              | **⌘E**    | **Ctrl+E**       |
 | [Run anything](https://www.jetbrains.com/help/idea/running-anything.html) (can run Maven commands from here)                                                                                           | **⌃⌃**    | **Ctrl+Ctrl**    |
-| Open [Preferences/Settings](https://www.jetbrains.com/help/idea/settings-preferences-dialog.html) dialog                                                                                               | **⌘,**    | **Ctrl+Alt+S**   |
+| 打开 [首选项/设置](https://www.jetbrains.com/help/idea/settings-preferences-dialog.html) 对话框                                                                                                                  | **⌘,**    | **Ctrl+Alt+S**   |
 
-There are links to more information on this tutorial's [introduction](../introduction).
+有关本教程[ 介绍 ](../introduction)的更多链接信息。

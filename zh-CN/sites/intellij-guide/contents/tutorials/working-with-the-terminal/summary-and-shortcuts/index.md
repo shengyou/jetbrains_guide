@@ -33,4 +33,4 @@ You may also find these links useful:
 | [Move between the different tabs](https://www.jetbrains.com/help/idea/terminal-emulator.html#new_session) | **⌘⇧** or **⌘⇧** | **Alt+←** or **Alt+→** |
 | Switch between splits                                                                                     | **⌥⇥**           | **Ctrl+Tab**           |
 | Close splits                                                                                              | **⌘W**           | **Ctrl+F4**            |
-| [Open the terminal window](https://www.jetbrains.com/help/idea/terminal-emulator.html#open-terminal)      | **⌥F12**         | **Alt+F12**            |
+| [打开终端窗口](https://www.jetbrains.com/help/idea/terminal-emulator.html#open-terminal)                        | **⌥F12**         | **Alt+F12**            |

@@ -1,11 +1,11 @@
 ---
 type: TutorialStep
 date: 2021-01-01
-title: Shortcuts
+title: 关于快捷键
 technologies: [ ]
 topics: [ ]
 author: hs
-subtitle: Shortcuts used in the tutorial
+subtitle: 教程中使用的快捷键列表
 thumbnail: ./thumbnail.png
 ---
 

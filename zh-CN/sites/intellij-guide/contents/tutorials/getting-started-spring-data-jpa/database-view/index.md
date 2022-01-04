@@ -23,11 +23,11 @@ thumbnail: ./thumbnail.png
 
 **可选步骤**：在“选项”里面，设置 *Auto-disconnect after（此时间后自动断开）* 为 3 秒。 此设置将断开 IntelliJ IDEA 中的数据库，并释放所有锁，使我们的应用程序能够保持连接并写入数据库。 这将防止您的应用程序出现 `database may already be in use（数据库可能已经在使用中）` 的错误。 这样设置后，您可能需要单击数据库资源管理器上的"刷新"按钮来更新数据源。
 
-Then we will click **Test Connection** to make sure our configuration is valid.
+然后，我们将单击 **Test Connection（测试连接）** 以确保我们的配置有效。
 
 ![数据源配置选项](./IJConfigOptions.png)
 
-Once we click **OK**, we see a new data source for our H2 database.
+点击 **OK（确定）**，我们就能看到 H2 数据库的数据源了。
 
 ## 最终结果
 在数据库资源管理器中，我们现在可以通过双击表来导航到我们的员工表并查看所有的员工数据。

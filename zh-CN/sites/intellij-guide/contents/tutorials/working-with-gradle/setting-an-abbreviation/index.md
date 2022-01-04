@@ -1,34 +1,34 @@
 ---
 type: TutorialStep
 date: 2021-05-14
-title: Setting an abbreviation
+title: 设置缩写
 technologies: [ ]
 topics:
   - tricks
 author: tg
-subtitle: Use a unique abbreviation to quickly navigate to the Gradle tool window
+subtitle: 使用唯一的缩写快速导航到 Gradle 工具窗口
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
   url: https://youtu.be/6V6G3RyxEMk?start=767
 ---
 
-You may have noticed that there are a lot of results when we type "Gradle" into any of the search options. We may want to provide a way to quickly access the Gradle tool window.
+您可能已经注意到，当我们在随处搜索选项中输入 “Gradle” 时，会有很多结果。 我们希望可以提供一种快速访问 Gradle 工具窗口的方法。
 
-You can, of course, [set a keyboard shortcut](https://www.jetbrains.com/help/idea/configuring-keyboard-and-mouse-shortcuts.html#add-keyboard-shortcut) for any IntelliJ IDEA action, and you may want to set one for opening the Gradle tool window.
+当然，您可以 [设置键盘快捷键](https://www.jetbrains.com/help/idea/configuring-keyboard-and-mouse-shortcuts.html#add-keyboard-shortcut)，并且可能需要设置一个用于打开 Gradle 工具窗口的快捷键。
 
-Alternatively, or even additionally, we can [add an abbreviation](https://www.jetbrains.com/help/idea/configuring-keyboard-and-mouse-shortcuts.html#add-abbreviation).
+或者，我们甚至可以 [添加一个缩写](https://www.jetbrains.com/help/idea/configuring-keyboard-and-mouse-shortcuts.html#add-abbreviation).。
 
-On the Keymap page of the Settings/Preferences dialog, **⌘,** (macOS), or **Ctrl+Alt+S**  (Windows/Linux), right-click an action and select **Add Abbreviation**.
+按 **⌘,**（macOS），或 **Ctrl+Alt+S** （Windows/Linux），然后打开“设置/首选项”对话框的“键盘映射”，右键单击某个操作，然后选择 **添加缩写**。
 
-![Add abbreviation](./add-abbreviation.png)
+![添加缩写](./add-abbreviation.png)
 
-We can provide a short, memorable text string which we can use when searching for the Gradle tool window. For example, enter "grdl" and press **Enter**, or **OK**.
+我们可以设置一个简短，好记忆的文本字符串，然后就可以在搜索 Gradle 工具窗口时使用它。 例如，输入 “grdl”，然后按 **Enter**，或 **OK**。
 
-![Enter abbreviation](./abbreviation-to-use.png)
+![输入缩写](./abbreviation-to-use.png)
 
-Now, if we bring up the Search Everywhere dialog by pressing **Shift** twice, and we type "grdl" we'll see the Gradle Tool Window as the first result, it's not hiding in a list of similar looking results.
+现在，如果我们通过按两次 **Shift** 来打开“随处搜索”对话框，然后输入 "grdl"，我们将看到 Gradle 工具窗口作为第一个结果，它不会隐藏在类似结果的列表中。
 
-![Enter abbreviation](./grdl-search-results.png)
+![输入缩写](./grdl-search-results.png)
 
-Next, let's look at how to run Gradle tasks.
+接下来，让我们看一下如何运行 Gradle 任务。

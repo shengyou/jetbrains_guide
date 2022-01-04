@@ -1,37 +1,37 @@
 ---
 type: TutorialStep
 date: 2021-05-14
-title: Group ID and version number
+title: 组 ID 和版本号
 technologies:
   - gradle
 topics: [ ]
 author: tg
-subtitle: How to set up or change a project's group ID and version number.
+subtitle: 如何设置或更改项目的组 ID 和版本号。
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
   url: https://youtu.be/6V6G3RyxEMk?start=537
 ---
 
-Now we've covered the basics of a new Gradle project, let's go back and look at how to set the [groupID and version](https://maven.apache.org/guides/mini/guide-naming-conventions.html) of a new project.
+现在我们已经介绍了 Gradle 项目的基础知识，让我们回过头来看看如何设置项目的 [groupID 和版本号](https://maven.apache.org/guides/mini/guide-naming-conventions.html) 。
 
-Let's follow the same steps we took earlier, creating a new Gradle project with Java and the Groovy DSL.
+让我们按照之前的相同步骤，使用 Java 和 Groovy DSL 创建一个新的 Gradle 项目。
 
-![Create another new project](./second-new-project.png)
+![创建另一个新项目](./second-new-project.png)
 
-After we've entered the project name, e.g. "more-gradle", we can click on "artifact coordinates" to configure more settings for the project.
+输入项目名称后，例如 “more-gradle”，我们可以点击“工件坐标”为项目配置更多设置。
 
-![Artifact co-ordinates](./artifact-coords.png)
+![工件坐标](./artifact-coords.png)
 
-We can optionally enter a new GroupId, which is usually the company domain. If we try to change the ArtifactId, IntelliJ IDEA warns us that this should be the same as the project name
+我们可以输入一个新的 GroupID，通常是公司的域。 如果我们尝试更改 ArtifactID，IntelliJ IDEA 会警告我们，它应该与项目名称相同。
 
-We can also change the project's version number, if we have a different number for the project, or a different version number format.
+如果我们的项目有不同的版本号，或者不同的版本号格式，我们也可以更改项目的版本号。
 
-When we create the project, we can see the groupID and version number are set in the build.gradle file.
+创建好项目时，我们可以看到在 build.gradle 文件中设置了 GroupID 和版本号。
 
 ```groovy
 group 'com.jetbrains'
 version '1.0-SNAPSHOT'
 ```
 
-Next, we'll look at how to open an existing Gradle project, and how IntelliJ IDEA helps us here.
+接下来，我们将看看如何打开现有的 Gradle 项目，以及 IntelliJ IDEA 能提供哪些帮助。

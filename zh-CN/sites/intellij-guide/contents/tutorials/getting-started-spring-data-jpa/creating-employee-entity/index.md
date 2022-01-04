@@ -1,11 +1,11 @@
 ---
 type: TutorialStep
 date: 2021-06-02
-title: Creating an Employee Entity
+title: 创建员工实体
 technologies: [ ]
 topics: [ ]
 author: da
-subtitle: Create a JPA entity representing an Employee.
+subtitle: 创建代表员工的 JPA 实体。
 thumbnail: ./thumbnail.png
 ---
 

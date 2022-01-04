@@ -1,7 +1,7 @@
 ---
 type: TutorialStep
 date: 2021-08-11
-title: Introduction
+title: 简介
 technologies: [ ]
 topics: [ ]
 author: tg
@@ -20,7 +20,7 @@ In this tutorial, we're going to look at how to work with Maven projects in Inte
 ### IntelliJ IDEA 帮助文档
  - [Maven](https://www.jetbrains.com/help/idea/maven-support.html)
  - [Maven tool window](https://www.jetbrains.com/help/idea/maven-projects-tool-window.html)
- - [New projects from the Welcome Screen](https://www.jetbrains.com/help/idea/new-project-wizard.html)
- - [Run anything](https://www.jetbrains.com/help/idea/running-anything.html)
+ - [从欢迎画面新建项目](https://www.jetbrains.com/help/idea/new-project-wizard.html)
+ - [运行全部](https://www.jetbrains.com/help/idea/running-anything.html)
  - [Settings/Preferences dialog](https://www.jetbrains.com/help/idea/settings-preferences-dialog.html) and specifically [Maven settings](https://www.jetbrains.com/help/idea/maven.html)
- - [Configuring keyboard shortcuts](https://www.jetbrains.com/help/idea/configuring-keyboard-and-mouse-shortcuts.html#add-keyboard-shortcut)
+ - [配置键盘快捷键](https://www.jetbrains.com/help/idea/configuring-keyboard-and-mouse-shortcuts.html#add-keyboard-shortcut)

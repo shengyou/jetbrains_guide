@@ -5,7 +5,7 @@ title: 简介
 technologies: [ ]
 topics: [ ]
 author: da
-subtitle: Getting started with Spring Data JPA.
+subtitle: 开始使用 Spring Data JPA。
 thumbnail: ./thumbnail.png
 ---
 

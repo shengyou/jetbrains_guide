@@ -1,45 +1,45 @@
 ---
 type: TutorialStep
 date: 2021-05-15
-title: Running Gradle tasks
+title: 运行 Gradle 任务
 technologies:
   - gradle
 topics:
-  - build
+  - 构建
 author: tg
-subtitle: There are several convenient ways to run Gradle tasks from IntelliJ IDEA.
+subtitle: 有多种方便的方法可以从 IntelliJ IDEA 中运行 Gradle 任务。
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
   url: https://youtu.be/6V6G3RyxEMk?start=824
 ---
 
-We saw earlier that we can navigate to a specific [Gradle task](https://docs.gradle.org/current/userguide/more_about_tasks.html) in a specific Gradle project in the [Gradle Tool Window](https://www.jetbrains.com/help/idea/jetgradle-tool-window.html), and we can double-click that task to get IntelliJ IDEA to run it.
+我们之前已经了解到，可以在 Gradle 项目的[ Gradle 工具窗口](https://www.jetbrains.com/help/idea/jetgradle-tool-window.html)里导航到特定的 [Gradle 任务](https://docs.gradle.org/current/userguide/more_about_tasks.html) ，然后双击该任务让 IntelliJ IDEA 运行它。
 
-![Select a Gradle task to run it](./gradle-task.png)
+![选择一个 Gradle 任务来运行它](./gradle-task.png)
 
-We can also click on the elephant at the top of the Gradle tool window to run any Gradle task.
+我们还可以点击 Gradle 工具窗口顶部的大象来运行任何 Gradle 任务。
 
-![Gradle elephant button](./elephant.png)
+![Gradle 大象按钮](./elephant.png)
 
-IntelliJ IDEA populates this with common Gradle tasks and ones we've run recently.
+IntelliJ IDEA 用常见的 Gradle 任务和我们最近运行的任务来显示在这里。
 
-![Run Gradle command](./run-gradle-command.png)
+![运行 Gradle 命令](./run-gradle-command.png)
 
-This can be a good way to run multiple gradle tasks, like you would from the command line. For example, running `gradle clean build` to make sure everything is working as expected before committing changes.
+这是运行多个 Gradle 任务的好方法，就像从命令行运行一样。 例如，运行  `gradle clean build`，以确保在提交更改之前一切如预期一样。
 
-You may have noticed this actually uses the [Run Anything](https://www.jetbrains.com/help/idea/jetgradle-tool-window.html) dialog, which we can bring up by pressing Ctrl twice. Press **⌃⌃** (macOS), or **Ctrl+Ctrl**  (Windows/Linux), type "gradle" followed by the gradle task name or names.
+您可能已经注意到，这实际上使用了 [运行任何内容](https://www.jetbrains.com/help/idea/jetgradle-tool-window.html) 对话框，我们也可以通过按 Ctrl 两次来调出该对话框。 按**⌃⌃**（macOS），或**Ctrl+Ctrl** （Windows/Linux），输入“gradle”，后面跟着一个或多个 Gradle 任务的名称。
 
-We can, of course, run Gradle commands from the terminal window inside IntelliJ IDEA. Open this with **⌥F12** (macOS), or **Alt+F12**  (Windows/Linux).
+当然，我们也可以从 IntelliJ IDEA 内部的终端窗口运行 Gradle 命令。 按 **⌥F12**（macOS），或 **Alt+F12** （Windows/Linux）就可以打开终端窗口。
 
-![Open the terminal window](./terminal.png)
+![打开终端窗口](./terminal.png)
 
-If we type a Gradle command, IntelliJ IDEA highlights it. This means that this is a command that can be run inside the IDE, it doesn't have to be run from the command line.
+如果我们输入一个 Gradle 命令，IntelliJ IDEA 会高亮显示它。 这意味着这是一个可以在 IDE 中运行的命令，不必从命令行运行。
 
-![Terminal command highlighted](./terminal-ide-command.png)
+![终端命令高亮显示](./terminal-ide-command.png)
 
-If we press **Enter**, it will be run from the command line like we expect. If we press **⌘⏎** (macOS), or **Ctrl+Enter**  (Windows/Linux), this command will be run in IntelliJ IDEA. In this case, the [Run tool window](https://www.jetbrains.com/help/idea/jetgradle-tool-window.html) is opened and the command is run there. We see the results the same way we would have if we'd run the command from the Gradle Tool Window.
+如果我们按 **Enter**，它将像我们预期的那样从命令行运行。 如果我们按 **⌘⏎**（macOS），或 **Ctrl+Enter** （Windows/Linux），此命令将在 IntelliJ IDEA 中运行。 在这种情况下，将打开 [运行工具窗口](https://www.jetbrains.com/help/idea/jetgradle-tool-window.html) 并在其中运行命令。 我们看到的结果与从 Gradle 工具窗口运行的相同。
 
-![Gradle task in run window](./gradle-run-window.png)
+![运行窗口中的 Gradle 任务](./gradle-run-window.png)
 
-Next, let's look at some tips for working with Gradle in IntelliJ IDEA.
+接下来，让我们看一下在 IntelliJ IDEA 中使用Gradle的一些技巧。

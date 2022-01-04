@@ -5,7 +5,7 @@ title: 共享 IntelliJ 设置
 technologies: [ ]
 topics: [ ]
 author: hs
-subtitle: You can share settings across your own instances of IntelliJ IDEA or with your colleagues
+subtitle: 您可以在您自己的多个 IntelliJ IDEA 实例之间或者与您的同事共享设置
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png

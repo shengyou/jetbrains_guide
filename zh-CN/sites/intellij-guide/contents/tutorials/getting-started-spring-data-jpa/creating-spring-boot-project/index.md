@@ -19,4 +19,4 @@ thumbnail: ./thumbnail.png
 
 ![新建项目窗口依赖项](./NewProject-Deps.png)
 
-Once we click **Finish**, IntelliJ IDEA creates a new Spring Boot project with the Spring Data JPA and database dependencies.
+一旦我们点击 **Finish（完成）**，IntelliJ IDEA 就会创建一个新的带有 Spring Data JPA 和数据库依赖项的 Spring Boot 项目。

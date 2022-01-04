@@ -1,11 +1,11 @@
 ---
 type: TutorialStep
 date: 2021-05-14
-title: Syncing and reloading
+title: 同步和重新加载
 technologies:
   - gradle
 topics:
-  - build
+  - 构建
 author: tg
 subtitle: Sometimes you may need to encourage IntelliJ IDEA to reload any changes from the Gradle configuration.
 thumbnail: ./thumbnail.png

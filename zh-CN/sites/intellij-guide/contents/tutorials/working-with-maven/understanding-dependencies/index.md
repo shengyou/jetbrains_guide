@@ -23,11 +23,11 @@ This will bring up the artifact search dialog, which you can use to find the dep
 
 ---
 
-**_Top Tip:_** If you find you're not getting code completion for your libraries, or the results you expect in your Maven artifact search, there's a trick to help with that. Open the [Settings/Preferences dialog](https://www.jetbrains.com/help/idea/settings-preferences-dialog.html), go to [Build, Execution, Deployment | Build Tools | Maven | Repositories](https://www.jetbrains.com/help/idea/maven-repositories.html).
+**_Top Tip:_** If you find you're not getting code completion for your libraries, or the results you expect in your Maven artifact search, there's a trick to help with that. 打开 [设置/首选项对话框](https://www.jetbrains.com/help/idea/settings-preferences-dialog.html)，选择[ 构建、执行、部署 | 构建工具 | Maven | 仓库 ](https://www.jetbrains.com/help/idea/maven-repositories.html)。
 
-![Indexed Maven Repositories](repositories.png)
+![已编制索引的 Maven 仓库](repositories.png)
 
-You'll see IntelliJ IDEA has a list of indexed repositories, and the date it was last indexed. Selecting one, or all, of these and pressing **Update** usually helps IntelliJ IDEA to give good suggestions for artifacts.
+您将看到 IntelliJ IDEA 有一个索引存储库列表，以及上次编制索引的日期。 Selecting one, or all, of these and pressing **Update** usually helps IntelliJ IDEA to give good suggestions for artifacts.
 
 ---
 

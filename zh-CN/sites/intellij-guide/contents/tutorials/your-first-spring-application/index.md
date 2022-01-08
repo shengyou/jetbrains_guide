@@ -1,6 +1,6 @@
 ---
 date: 2021-05-20
-title: Your First Spring Boot Application
+title: 您的第一个 Spring Boot 应用程序
 technologies:
   - java
   - spring
@@ -8,7 +8,7 @@ topics:
   - gettingstarted
   - ultimate
 author: hs
-subtitle: In this tutorial we will use IntelliJ IDEA to create your first "Hello World" Spring Boot application. We'll also discuss what's in your project and why. Spring Boot is a way to create Spring applications easily with some abstractions, some of which we'll touch on in this tutorial.
+subtitle: 在本教程中，我们将使用 IntelliJ IDEA 创建您的第一个"Hello World" Spring Boot 应用程序。 我们还将讨论到您的项目中的内容及其原因和来由。 Spring Boot 是一种使用一些简单抽象的设置，轻松创建 Spring 应用程序的方法，我们将在本教程中介绍。
 thumbnail: ./thumbnail.png
 tutorialItems:
   - /tutorials/your-first-spring-application/creating-spring-boot-application/

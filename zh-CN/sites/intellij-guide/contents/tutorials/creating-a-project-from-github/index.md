@@ -1,12 +1,12 @@
 ---
 date: 2021-11-09
-title: Creating a Project from GitHub
+title: 从 GitHub 创建一个项目
 technologies:
   - git
 topics:
   - vcs
 author: hs
-subtitle: How you can create an IntelliJ IDEA project from your code in GitHub
+subtitle: 如何从您的 GitHub 中的代码创建一个 IntelliJ IDEA 项目
 thumbnail: ./thumbnail.png
 tutorialItems:
   - /tutorials/creating-a-project-from-github/clone-from-github/
@@ -16,5 +16,5 @@ tutorialItems:
   - /tutorials/creating-a-project-from-github/summary-and-shortcuts/
 ---
 
-In this tutorial, we’re going to look at how we can create an IntelliJ IDEA project from the code in a [GitHub](https://github.com/) repository.
+在本教程中，我们将了解如何从 [GitHub](https://github.com/) 仓库中的代码创建 IntelliJ IDEA 项目。
 

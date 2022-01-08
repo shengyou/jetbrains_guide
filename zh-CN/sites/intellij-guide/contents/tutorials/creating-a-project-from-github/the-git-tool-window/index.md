@@ -1,19 +1,19 @@
 ---
 type: TutorialStep
 date: 2021-11-09
-title: The Git Tool Window
+title: Git 工具窗口
 technologies: [ ]
 topics: [ ]
 author: hs
-subtitle: How the Git Tool Window can help you
+subtitle: Git 工具窗口如何为您提供帮助
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
   url: https://youtu.be/aBVOAnygcZw?start=121
 ---
 
-One of the most useful tools when you're working with a Git project is the Git Tool Window. This gives you visibility over the version control status of your project. One way to open the Git tool window is to hover over the quick access button in the bottom left of the IntelliJ IDEA window, and select **Git**. This will open the Git Log tool window. Alternatively, you can use **⌘9** (macOS), or **Alt+9** (Windows/Linux), to open the Git Log tool window.
+当您在使用 Git 项目时，最有用的工具之一是 Git 工具窗口。 它可以让您查看您的项目的版本控制状态。 打开 Git 工具窗口的一种方法是将鼠标悬停在 IntelliJ IDEA 窗口左下角的快速访问按钮上，然后选择 **Git**。 这将打开 Git 日志工具窗口。 或者您可以使用 **⌘9**（macOS）或 **Alt+9**（Windows/Linux）来打开 Git 日志工具窗口。
 
-![Git Log Tool Window](git-log-tool-window.png)
+![Git 日志工具窗口](git-log-tool-window.png)
 
-This window shows you all the commits for the project. You can also see a list of local branches, which in this case is just the "main" branch since we just cloned this repository. You can also see the remote branches too. If you find a visual representation of the commit history useful, this window can help you to understand the status of commits, branches, and remotes for your project.
+该窗口显示了该项目所有的提交。 您还可以看到本地分支的列表，在本例中，由于我们刚刚克隆了此仓库，因此它只有 "main" 分支。 您还可以看到远程分支。 如果您觉得提交历史的可视化显示很有用，这个窗口可以帮助您了解您的项目的提交、分支和远程的状态。

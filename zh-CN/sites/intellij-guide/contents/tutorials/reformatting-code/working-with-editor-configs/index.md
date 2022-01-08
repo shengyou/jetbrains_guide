@@ -10,7 +10,7 @@ thumbnail: ./thumbnail.png
 ---
 
 ## 确保启用 EditorConfig 文件功能
-要在 IntelliJ IDEA 中使用 [EditorConfig 文件](https://www.jetbrains.com/help/idea/configuring-code-style.html#editorconfig) 需要您开启 _EditorConfig_ 插件。 Have a look at the [plugins help](https://www.jetbrains.com/help/idea/managing-plugins.html) if you're not sure how to do this.
+要在 IntelliJ IDEA 中使用 [EditorConfig 文件](https://www.jetbrains.com/help/idea/configuring-code-style.html#editorconfig) 需要您开启 _EditorConfig_ 插件。 如果您不知道如何做到这一点，请查看[插件帮助](https://www.jetbrains.com/help/idea/managing-plugins.html)。
 
 ### .editorconfig 文件的使用
 IntelliJ IDEA 提供了一个允许您使用 `.editorconfig` 文件管理所有代码样式设置的插件。 您需要将 `.editorconfig` 文件放入到包含您想要用`.editorconfig` 文件去管理的文件根目录中。

@@ -5,7 +5,7 @@ title: Gradle 项目的概览
 technologies:
   - gradle
 topics:
-  - interface
+  - 接口
 author: tg
 subtitle: 看一下标准的 Gradle 项目，以便更好地理解它。
 thumbnail: ./thumbnail.png
@@ -30,16 +30,16 @@ longVideo:
 
 `build.gradle` 文件是项目构建和依赖项的主要配置。 IntelliJ IDEA 在创建此项目时创建了最小规模的构建文件。 [我们将在下一步中更详细地介绍这一点](../the-build-gradle-file/)。
 
-The last key piece to understanding your Gradle project in IntelliJ IDEA is the [Gradle tool window](https://www.jetbrains.com/help/idea/jetgradle-tool-window.html). 我们可以通过左下角的快速访问按钮打开它。
+在 IntelliJ IDEA 中了解您的 Gradle 项目的最后一个关键内容是[ Gradle 工具窗口](https://www.jetbrains.com/help/idea/jetgradle-tool-window.html)。 我们可以通过左下角的快速访问按钮打开它。
 
 ![Gradle 工具窗口](./gradle-window.png)
 
-The Gradle tool window shows us all the project's tasks and its dependencies. This dependencies list is different from the project window, it shows the dependencies grouped by configuration, and it shows their own dependencies nested underneath. This can be helpful for figuring out where a specific transitive dependency came from.
+Gradle 工具窗口向我们显示项目的所有任务及其依赖项。 这里的依赖项列表与项目窗口不同，它会按配置分组来显示依赖项，并显示嵌套在其下面的自己的依赖项。 这对于确认特定依赖项的来源很有帮助。
 
-The Tasks section shows all the Gradle build tasks, grouped by type. We don't have much to build right now as this basic project doesn't have any code yet, but we can run the `clean` task to show what happens.
+任务部分会显示所有 Gradle 构建任务，按类型分组。 我们现在没有什么需要构建的内容，因为这个基本项目还没有任何代码，但我们可以运行 `clean` 任务来看看会发生什么。
 
-![Build success](./build-successful.png)
+![构建成功](./build-successful.png)
 
-The [Run tool window](https://www.jetbrains.com/help/idea/run-tool-window.html)  opens, and we see the results of the `clean` task, including all the Gradle output, so we can see what was run and what the results were. We can use this to help us debug problems if there are any issues.
+打开 [运行窗口](https://www.jetbrains.com/help/idea/run-tool-window.html)，我们会看到 `clean` 任务的结果，包括所有 Gradle 输出，我们可以看到运行的内容和结果。 我们可以用它来帮助我们调查遇到的问题。
 
-Next, let's look at that `build.gradle` file in more detail.
+接下来，让我们详细地看一下 `build.gradle` 文件。

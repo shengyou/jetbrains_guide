@@ -18,9 +18,9 @@ thumbnail: ./thumbnail.png
 
 这里有很多设置，熟悉它们的最简单方法是四处浏览并尝试，选择或清除复选框，然后查看对右侧代码的影响。 实时预览非常有助于了解设置将影响些什么。
 
-As a side note, if you do make some changes here, and you want to reset them without resetting all the settings, you can click the blue **Reset** link on the top-right of this dialog. 只有当您更改了设置后，它才会显示。
+另一方面，如果您确实在此处进行了一些更改，并且您希望重置它们而不重置 IDE 其他的设置，则可以单击此对话右上角的蓝色 **Reset （重置）** 链接。 只有当您更改了设置后，它才会显示。
 
-If you go to the **Wrapping and Braces** tab and then scroll down to **'for()' statement**, you will see the **Force braces** change we made earlier when we changed it to _Always_.
+如果您打开 **Wrapping and Braces （换行和括号）** 标签，然后向下滚动到 **'for()' 语句**，您会看到 **Force braces （强制加大括号）** 选项，我们早些时候已将它改为 _Always （总是）_。
 
 ![对于 for 循环 - 始终添加大括号](for-statement-braces-setting.png)
 

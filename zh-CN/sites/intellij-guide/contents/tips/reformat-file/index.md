@@ -6,7 +6,7 @@ topics:
   - interface
   - tricks
 author: hs
-subtitle: How to reformat a file or section of code
+subtitle: 如何对文件或部分代码进行格式化
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
@@ -20,8 +20,8 @@ seealso:
     title: IntelliJ IDEA Help - Reformat a File
     href: 'https://www.jetbrains.com/help/idea/reformat-and-rearrange-code.html#reformat_file'
 leadin: |
-  Sometimes code formatting can get out of sync, but there's an easy fix in IntelliJ IDEA. You can use **⌘⌥L** (macOS), or **Ctrl+Alt+L** (Windows/Linux) to reformat a selection of code according to your reformat settings.
+  有时代码格式化会不同步，但 IntelliJ IDEA 中有一个简单的方法。 您可以使用 **⌘⌥L**（macOS），或 **Ctrl+Alt+L**（Windows/Linux）根据您的设置对选择的代码进行重新格式化。
 
-  You can also display the Reformat File dialog with **⌥⇧⌘L** (macOS), or **Ctrl+Alt+Shift+L** (Windows/Linux).
+  您还可以使用  **⌥⇧⌘L**（macOS），或 **Ctrl+Alt+Shift+L**（Windows/Linux）来打开“重新格式化文件”对话框。
 ---
 

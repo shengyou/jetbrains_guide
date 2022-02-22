@@ -20,7 +20,7 @@ longVideo:
 | 项目结构对话框           | **⌘;**    | **Ctrl**+**Alt**+**Shift**+**S** |
 | 设置/偏好设置           | **⌘,**    | **Ctrl**+**Alt**+**S**           |
 | Search Everywhere | **⇧⇧**    | **Shift**+**Shift**              |
-| Find Action       | **⌘⇧A**   | **Ctrl** + **Shift** + **A**     |
+| 查找操作              | **⌘⇧A**   | **Ctrl** + **Shift** + **A**     |
 
 ### 要点
 - 比如说 Maven 或者 Gradle 这类的构建系统会覆盖您的项目结构中的配置

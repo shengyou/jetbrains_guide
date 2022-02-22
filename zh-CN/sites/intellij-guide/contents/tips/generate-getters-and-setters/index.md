@@ -17,6 +17,6 @@ seealso:
     title: IntelliJ IDEA Help - Create tests
     href: https://www.jetbrains.com/help/idea/create-tests.html
 leadin: |
-  You can use **⌘N** (macOS), or **Alt+Insert** (Windows/Linux) for the _Generate_ menu and then select `Constructor`, `Getter`, `Setter` or `Getter and Setter`.
+  您可以使用 **⌘N**（macOS） 或 **Alt+Insert**（Windows/Linux） 的_生成_菜单，然后选择"构造函数"，"Getter"，"Setter"或"Getter 和 Setter"。
 ---
 

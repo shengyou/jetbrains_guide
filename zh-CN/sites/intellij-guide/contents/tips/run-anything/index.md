@@ -7,7 +7,7 @@ topics:
   - tricks
   - running
 author: hs
-subtitle: How to use the Run Anything dialog
+subtitle: 如何使用运行全部
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
@@ -21,6 +21,6 @@ seealso:
     title: IntelliJ IDEA Help - Run/debug Configurations
     href: https://www.jetbrains.com/help/idea/run-debug-configuration.html
 leadin: |
-  You can run anything with **⌃⌃** (macOS), **Ctrl+Ctrl** (Windows). You can press **?** to see the options available to you and then run Maven Goals, Gradle Tasks, Open a Project or Run an existing run configuration.
+  您可以用 **⌃⌃**（macOS），或 **Ctrl+Ctrl**（Windows）来打开运行全部的对话框。 您可以输入 **?** 查看可用的选项，然后运行 Maven Goals、Gradle Tasks、打开项目或执行现有的运行配置。
 ---
 

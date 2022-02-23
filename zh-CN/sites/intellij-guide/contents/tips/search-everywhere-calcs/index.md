@@ -18,6 +18,6 @@ seealso:
     title: IntelliJ IDEA Help - Searching Everywhere
     href: https://www.jetbrains.com/help/idea/searching-everywhere.html
 leadin: |
-  使用 **⇧⇧**（macOS），或 **Shift+Shift**（Windows/Linux），然后输入您的算式。 The result will appear at the top of the Search Everywhere dialog as _Result:_.
+  使用 **⇧⇧**（macOS），或 **Shift+Shift**（Windows/Linux），然后输入您的算式。 结果将显示在“随处搜索”对话框的顶部的_Result:_。
 ---
 

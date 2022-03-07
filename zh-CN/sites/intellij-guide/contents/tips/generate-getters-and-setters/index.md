@@ -1,12 +1,12 @@
 ---
 date: 2021-05-31
-title: Generate constructors and accessor methods
+title: 生成构造器和 get()/set() 方法
 technologies:
   - java
 topics:
   - editing
 author: hs
-subtitle: We can quickly generate common code constructs such as Constructors and Get and Set methods
+subtitle: 我们可以快速生成常用的代码，如构造器和 get()/set() 方法
 thumbnail: ./thumbnail.png
 cardThumbnail: ./card.png
 shortVideo:
@@ -17,6 +17,6 @@ seealso:
     title: IntelliJ IDEA Help - Create tests
     href: https://www.jetbrains.com/help/idea/create-tests.html
 leadin: |
-  您可以使用 **⌘N**（macOS） 或 **Alt+Insert**（Windows/Linux） 的_生成_菜单，然后选择"构造函数"，"Getter"，"Setter"或"Getter 和 Setter"。
+  您可以使用 **⌘N**（macOS） 或 **Alt+Insert**（Windows/Linux） 的 _生成_ 菜单，然后选择"构造函数"，"Getter"，"Setter" 或 "Getter 和 Setter"。
 ---
 

@@ -1,33 +1,33 @@
 ---
 type: TutorialStep
 date: 2021-05-20
-title: Setup and Teardown
+title: 设置和解除
 technologies: [ ]
 topics:
   - testing
 author: tg
-subtitle: See how to set up, or clean up, test classes and methods in Spock.
+subtitle: 了解如何在 Spock 中设置或清理测试类和方法。
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
   url: https://youtu.be/i5Qu3qYOfsM?start=1947
 ---
 
-If you've used other testing frameworks, the concept of test or specification class [setup and tear down will be familiar](http://spockframework.org/spock/docs/2.0/all_in_one.html#_comparison_to_junit).
+如果您使用过其他测试框架，那么对 [设置和解除](http://spockframework.org/spock/docs/2.0/all_in_one.html#_comparison_to_junit) 应该会比较熟悉。
 
-Spock provides a `setup` method (we can use IntelliJ IDEA's [code generation](https://www.jetbrains.com/help/idea/generating-code.html) to create this), which will be [run before every individual test method](http://spockframework.org/spock/docs/2.0/all_in_one.html#_fixture_methods) in this class. This can be used to set up a clean state at the start of each test.
+Spock 提供了一个 `setup` 方法（我们可以使用 IntelliJ IDEA 的 [代码生成](https://www.jetbrains.com/help/idea/generating-code.html) 来在 [每个单独的测试方法之前](http://spockframework.org/spock/docs/2.0/all_in_one.html#_fixture_methods) 创建它）。 这可用于在每次测试开始时设置清理状态。
 
-To clean up data or state at the end of every test method, you need a `cleanup` method. This is run after every individual test method.
+若要在每个测试方法结束时清理数据或状态，需要用 `cleanup` 方法。 这是在每个单独的测试方法之后运行的。
 
-Use the `setupSpec` method to set up state once at the start of the specification, this is for things that should not change between individual test methods.
+使用 `setupSpec` 方法在设置开始时设一次状态，这适用于在各个测试方法之间不会更改的内容。
 
-Create a `cleanupSpec` method for final teardown code, this method will be called once at the very end of running all the tests.
+创建一个 `cleanupSpec` 方法，用于最后的解除，此方法将在运行所有测试结束时被调用一次。
 
-One final piece of useful information. The tests in this tutorial created the "objects under test" in the test methods themselves. However, you might also want to create your test instance as a field in the test. You can use the [@Subject](http://spockframework.org/spock/docs/2.0/all_in_one.html#_subject) annotation on the field to show that this is the object under test (you can use this annotation on local variables in the methods too). You can then reference this field in the test methods just as you'd expect in any Java or Groovy class.
+最后一条有用的信息。 本教程中的测试在测试方法本身里创建了“被测对象”。 但是，您可能还希望将测试对象的实例创建为测试中的字段。 您可以在字段上使用 [@Subject](http://spockframework.org/spock/docs/2.0/all_in_one.html#_subject) 注解来表示这是测试的对象（您也可以在方法中的局部变量上使用此注解）。 然后，您可以在测试方法中引用此字段，就像您在任何 Java 或 Groovy 类中那样。
 
 ```groovy
 @Subject
 private Polygon polygon = new Polygon(5)
 ```
 
-Now we know how to set up, and clean up, our test classes and methods. Let's look at how Spock tests can function not only as tests, but as living documentation of the expected functionality of the application.
+现在，我们知道如何设置和解除我们的测试类和方法。 让我们看一下 Spock 测试如何不仅能做测试，还可以作为说明预期功能的应用程序的文档。

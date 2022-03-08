@@ -1,42 +1,42 @@
 ---
 type: TutorialStep
 date: 2021-05-20
-title: Groovy Tips for Java Developers
+title: 给 Java 开发者的 Groovy 小技巧
 technologies:
   - groovy
 topics: [ ]
 author: tg
-subtitle: Groovy's syntax and functionality might be unusual for Java developers to begin with, but it can be very helpful for testing.
+subtitle: Groovy 的语法和功能对于 Java 开发人员来说一开始可能很不寻常，但它对测试非常有帮助。
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
   url: https://youtu.be/i5Qu3qYOfsM?start=486
 ---
 
-Before going further with Spock examples, let's take a look at some things which might look odd if we're used to using [Java](../../../technologies/java) to test Java code.
+在进一步深入 Spock 示例之前，让我们看一下一些可能看起来很奇怪的东西，如果我们习惯于使用 [Java](../../../technologies/java) 来测试 Java 代码的话。
 
 ```groovy
 when:
 int sides = polygon.numberOfSides
 ```
 
-In the `when` section of the test in the last example, we're actually reaching right inside the Java class to inspect the value of a private field. We can do this from Groovy, which can be helpful for testing private fields or methods, without compromising their visibility in production code. However, IntelliJ IDEA will give us a warning in case this is not something we want to do intentionally.
+在最后一个例子中测试的 `when` 部分，我们实际上是直接进入到了 Java 类的内部来检查一个私有字段的值。 我们可以从 Groovy 做到这一点，这对测试私有字段或方法很有帮助，而且不会折中它们在生产代码中的可见性。 然而 IntelliJ IDEA 将会给我们一个警告，以防这不是我们有意想要做的情况。
 
 ![](./11.png)
 
-Often, if we need something visible for testing we probably will need it visible in production code too.
+通常如果我们需要一些可见的东西进行测试，我们可能也需要它在生产代码里也可见。
 
-Go into your Polygon class and press **⌥⏎** (macOS), or **Alt+Enter** (Windows/Linux) on the field and get IntelliJ IDEA to create a getter for the field.
+进入您的 Polygon 类，然后在字段上按 **⌥⏎**（macOS），或 **Alt + Enter**（Windows / Linux），来让 IntelliJ IDEA 为该字段创建一个 getter。
 
 ![](./12.png)
 
-Look at the test now you've made this change to the Polygon class. Now there's something odd about the `polygon.numberOfSides` call. The warning has gone, and `numberOfSides` is no longer in bold, it no longer looks like it's referencing a field. In fact, it's not. If we hold down **⌘**, or **Ctrl**, and move our mouse over this, we can see it's actually referencing the method `getNumberOfSides`.
+现在看下测试，您已经对 Polygon 类进行了此更改。 现在 `polygon.numberOfSides` 的调用有一些奇怪的地方。 警告已经消失， `numberOfSides` 不再是粗体，它不再看起来像在引用字段。 事实上并不是。 如果我们按住 **⌘**，或 **Ctrl**，然后将我们的鼠标移到这上面，我们可以看到它实际上引用了 `getNumberOfSides` 方法。
 
 ![](./13.png)
 
-If we're calling a Java getter from Groovy code, we can miss out the "get" at the start of the method name, and Groovy will still use the getter rather than the field. This can be useful to reduce noise, but you can still use the full method name with "get" if you prefer, it depends upon what you think is most readable. Sometimes removing the "get" might be confusing.
+如果我们从 Groovy 代码中调用 Java getter，我们可以忽略方法名称开头的 “get”，Groovy 仍然会使用 getter 而不是字段。 这对减少干扰很有用，但是如果您愿意，您仍然可以使用带有 “get” 的完整方法名称，这取决于您认为什么是最可读的。 有时删除 “get” 可能会令人困惑。
 
-In this section, we covered some tips on using Groovy to write tests. Now you know how to read Groovy code and understand that it may behave differently to how a Java developer would expect.
+在本节中，我们介绍了一些使用 Groovy 编写测试的技巧。 现在您知道如何阅读 Groovy 代码，并了解它的行为可能与 Java 开发人员预期的不同。
 
-Next, we're going to go back to our tests and explore the labels in our tests a bit more. 
+接下来，我们将返回到我们的测试，并进一步地探索测试中的标签。 
 

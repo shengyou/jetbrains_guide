@@ -1,22 +1,22 @@
 ---
 type: TutorialStep
 date: 2021-05-20
-title: Specifications as Documentation
+title: 将规格说明作为文档
 technologies: [ ]
 topics: [ ]
 author: tg
-subtitle: Spock tests don't just tell the computer how to test the application, they can help developers understand what the application is supposed to do.
+subtitle: Spock 测试不仅告诉计算机如何测试应用程序，还可以帮助开发人员了解应用程序应该做什么。
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
   url: https://youtu.be/i5Qu3qYOfsM?start=2057
 ---
 
-Let's take a look at [one last feature](http://spockframework.org/spock/docs/2.0/all_in_one.html#specifications_as_documentation) to help document the requirements via tests.
+让我们看看[最后一个功能](http://spockframework.org/spock/docs/2.0/all_in_one.html#specifications_as_documentation)，来通过测试帮助记录需求。
 
-We've seen that Spock has a focus on readability and tests as documentation. The [@Subject](http://spockframework.org/spock/docs/2.0/all_in_one.html#_subject) annotation, the [labelled blocks](http://spockframework.org/spock/docs/2.0/all_in_one.html#_blocks), [Strings as test method names](http://spockframework.org/spock/docs/2.0/all_in_one.html#_feature_methods) plus all you can do to [customise these String values](https://spockframework.org/spock/docs/2.0/all_in_one.html#_unrolled_iteration_names) all contribute to being able to use the automated tests as a documentation for what the system should do.
+我们已经看到 Spock 把可读性和测试作为文档的重点。 [@Subject](http://spockframework.org/spock/docs/2.0/all_in_one.html#_subject) 注解、[标签块](http://spockframework.org/spock/docs/2.0/all_in_one.html#_blocks)、[字符串作为测试方法的名字](http://spockframework.org/spock/docs/2.0/all_in_one.html#_feature_methods)以及所有您可以做的[自定义这些字符串值](https://spockframework.org/spock/docs/2.0/all_in_one.html#_unrolled_iteration_names)，都有助于将自动化测试作为系统应如何做的文档。
 
-We can also [add more information](http://spockframework.org/spock/docs/2.0/all_in_one.html#specifications_as_documentation), again for readability or documentation purposes, to the blocks in our tests.
+我们还可以在测试的块中[添加更多信息](http://spockframework.org/spock/docs/2.0/all_in_one.html#specifications_as_documentation)，同样出于可读性或文档目的。
 
 ```groovy
 def "should be able to create a stub"() {
@@ -32,10 +32,10 @@ def "should be able to create a stub"() {
 }
 ```
 
-We can add a String next to the label to give a more detailed description of the block. If we want to split a block into further blocks, for readability or to add documentation, we can use the [and:](http://spockframework.org/spock/docs/2.0/all_in_one.html#specifications_as_documentation) label, this is just to let us break things up further.
+我们可以在标签旁边添加一个字符串来提供该块的更详细的描述。 如果我们想把一个块划分成更多的块，为了可读性或为了添加文档，我们可以使用 [and:](http://spockframework.org/spock/docs/2.0/all_in_one.html#specifications_as_documentation) 标签，这只是为了让我们进一步划分。
 
-The text is available to the Spock runtime, so these messages can be used in messages and reports.
+该文本对 Spock 运行时是可用的，所以这些信息可以在信息和报告中使用。
 
-Spock tests, with the help of the Groovy language, can be very descriptive. These automated tests also tell us, the developer, what we should expect to see from our application.
+在 Groovy 语言的帮助下，Spock 测试可以非常具有描述性。 这些自动化测试还告诉我们开发人员，我们应该期望从我们的应用程序中看到什么。
 
-Finally, let's summarise what we've seen, and the shortcuts we've used.
+最后让我们来总结一下我们已经看到的，以及我们使用的快捷键。

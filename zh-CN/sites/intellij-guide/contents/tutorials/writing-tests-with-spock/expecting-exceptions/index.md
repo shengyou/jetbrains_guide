@@ -1,21 +1,21 @@
 ---
 type: TutorialStep
 date: 2021-05-20
-title: Expecting Exceptions
+title: 预期异常
 technologies: [ ]
 topics:
   - testing
 author: tg
-subtitle: Tests don't check just the happy paths, sometimes we want to say we're expecting a specific Exception.
+subtitle: 测试不只是检查成功的路径，有时候我们会期待一个特定的异常。
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
   url: https://youtu.be/i5Qu3qYOfsM?start=657
 ---
 
-Testing isn't just about testing the happy paths. We should also check the exceptional cases.
+测试不仅仅是测试成功的路径。 我们还应该检查异常的情况。
 
-Often, we want to check that the right sort of Exception gets thrown. If you create a new polygon with zero sides, this sounds like something that should cause an error. Let's write a test:
+通常我们希望检查是否抛出了正确的异常类型。 如果您创建一个零个边的新多边形，这听起来应该会导致错误。 让我们来编写一个测试：
 
 ```groovy
 def "should expect Exceptions"() {
@@ -27,20 +27,20 @@ def "should expect Exceptions"() {
 }
 ```
 
-The `then` block checks that the correct Exception has been thrown. We do this by calling `thrown()` with the class of the Exception that we expect to be thrown. In our case, we expect a [TooFewSidesException](https://github.com/trishagee/spock-testing-demo/blob/main/src/main/java/com/mechanitis/demo/spock/TooFewSidesException.java) to have been thrown by the call to the constructor  (create this Exception in your project if you want this test to run correctly).
+`then` 块检查是否正确的异常被抛出了。 我们通过调用 `thrown()` 和我们期望被抛出的异常的类来做这件事情。 在我们的例子中，通过调用构造函数，我们期望一个 [TooFewSidesException](https://github.com/trishagee/spock-testing-demo/blob/main/src/main/java/com/mechanitis/demo/spock/TooFewSidesException.java) 被抛出（如果您想要该测试正确运行，请在项目中创建此异常）。
 
-Note that in Java, we'd normally have to add .class to the end of `TooFewSidesException` to define this is the type of exception. In Groovy we don't need this, but you can add it if you think it makes the code clearer:
+请注意在 Java 中，我们通常需要在 `TooFewSidesException` 末尾添加 .class，来定义这是异常类型。 在 Groovy 中，我们不需要这个，但是如果您认为它使代码更清晰，则可以添加它：
 
 ```groovy
 then:
 thrown(TooFewSidesException.class)
 ```
 
-Run this test to see if the behaviour of the code is correct. The test should fail because the Polygon class doesn't throw this Exception yet.
+运行此测试来查看代码的行为是否正确。 测试应该会失败，因为 Polygon 类尚未抛出此异常。
 
 ![](./14.png)
 
-Change the constructor of [Polygon](https://github.com/trishagee/spock-testing-demo/blob/main/src/main/java/com/mechanitis/demo/spock/Polygon.java) so that it checks for the number of sides and throws the Exception if there are fewer than three sides:
+更改 [Polygon](https://github.com/trishagee/spock-testing-demo/blob/main/src/main/java/com/mechanitis/demo/spock/Polygon.java) 的构造函数，以便检查边数，并在少于三条边时抛出异常：
 
 ```java
 public Polygon(int numberOfSides) {
@@ -51,9 +51,9 @@ public Polygon(int numberOfSides) {
 }
 ```
 
-Re-run the test, it should pass.
+重新运行该测试，它应该能通过。
 
-We can even assign the thrown Exception to a variable so that we can perform some more checks on it. Let's check the number of sides stored on the TooFewSidesException to see if it matches the number of sides the Polygon was created with.
+我们甚至可以将抛出的异常分配给一个变量，以便我们可以对其执行更多的检查。 让我们检查存储在 TooFewSidesException 上的边数，看看它是否与创建多边形的边数相匹配。
 
 ```groovy
 then:
@@ -61,6 +61,6 @@ def exception = thrown(TooFewSidesException)
 exception.numberOfSides == 0
 ```
 
-Rerun the test: try using Find Action **⌘⇧A** (macOS), or **Ctrl+Shift+A** (Windows/Linux) and typing "Rerun", to rerun the test. The test should pass.
+重新运行测试：尝试使用查找操作（Find Action）**⌘⇧A**（macOS），或 **Ctrl+Shift+A**（Windows/Linux），然后输入 “Rerun” 来运行测试。 该测试应该能通过。
 
-Now you know how to write tests that expect exceptional cases. Next, we'll look at how to run a test with multiple inputs.
+现在您知道如何编写预期异常情况的测试了。 接下来，我们将看看如何使用多个输入运行测试。

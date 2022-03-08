@@ -1,13 +1,13 @@
 ---
 date: 2021-05-20
-title: Writing Tests with Spock
+title: 使用 Spock 编写测试
 technologies:
   - java
   - groovy
 topics:
   - testing
 author: tg
-subtitle: Learn about the Spock testing framework by creating a project that uses Spock to unit test Java code
+subtitle: 通过创建一个使用 Spock 对 Java 代码进行单元测试的项目来了解 Spock 测试框架
 thumbnail: ./thumbnail.png
 tutorialItems:
   - /tutorials/writing-tests-with-spock/introduction/

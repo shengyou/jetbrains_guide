@@ -1,38 +1,38 @@
 ---
 type: TutorialStep
 date: 2021-05-20
-title: Creating a Project for Spock
+title: 创建一个用 Spock 测试的项目
 technologies: [ ]
 topics:
   - gettingstarted
 author: tg
-subtitle: Start by creating a new Java project which will be the basis for the rest of this tutorial.
+subtitle: 首先创建一个新的 Java 项目，该项目将成为本教程其余部分的基础。
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
   url: https://youtu.be/i5Qu3qYOfsM?start=10
 ---
 
-Let's start by creating a new project that's going to contain Java project code, and use Spock to unit test that code.
+让我们首先创建一个包含 Java 代码的新项目，并使用 Spock 对该代码进行单元测试。
 
-From the new project window, we can choose any of:
+从新建项目窗口中，我们可以选择以下任一选项：
 - Java
 - Maven
 - Gradle
 
-...from the left-hand options to create our JVM project. For this tutorial we're going to use [Gradle](../../working-with-gradle) as our build tool.
+...从左侧选择创建我们的 JVM 项目。 在本教程中，我们将使用 [Gradle](../../working-with-gradle) 作为构建工具。
 
 ![](./01-new-project.png)
 
-Spock is a [Groovy](../../../technologies/groovy) testing framework, although we're going to use it to test Java code, so we could select Groovy as an additional library to add right at the start. However, we can also add Groovy later on so I'm not going to select it here.
+Spock 是一个 [Groovy](../../../technologies/groovy) 测试框架，尽管我们将使用它来测试 Java 代码，所以我们可以选择一开始就添加 Groovy 作为一个额外的库。 然而，我们也可以以后再添加 Groovy，因此我们暂且不在此处选择它。
 
-We're using JDK 11 for this project, but there's no functionality here that requires 11, you can use whichever version you're comfortable with.
+我们在这个项目中使用 JDK 11，但这里没有需要 11 里特有的功能，你可以使用任何版本。
 
-Call the project `spock-tutorial`, and save it to some useful location.
+将项目命名为 `spock-tutorial`，并将其保存到可用的位置。
 
 ![](./02-project-name.png)
 
-IntelliJ IDEA creates the files for the project and initialises the structure of the project. It's using Gradle to build this skeleton project to make sure all dependencies are downloaded and set up.
+IntelliJ IDEA 会为项目创建文件并初始化项目的结构。 Gradle 会构建此项目，以确保下载并设置所有依赖项。
 
-Now we have a simple Java project to play with, we can move onto the next step, adding Spock dependencies.
+现在我们有一个简单的 Java 项目可以用了，然后进入下一步，添加 Spock 依赖项。
 

@@ -1,28 +1,28 @@
 ---
 type: TutorialStep
 date: 2021-05-20
-title: Creating your Spring Controller
+title: 创建您的 Spring 控制器
 technologies: [ ]
 topics: [ ]
 author: hs
-subtitle: Using the IntelliJ IDEA New Project Wizard to create your Spring  Controller and select dependencies.
+subtitle: 使用 IntelliJ IDEA 新建项目向导创建 Spring 控制器并选择依赖项。
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
   url: https://youtu.be/wC6NiR8eKHE
 ---
 
-## Create your Spring Controller
-Now we have our functioning Spring project we need to [create a Spring Controller](https://spring.io/guides/gs/serving-web-content/#initial) to handle the web requests.
+## 创建您的 Spring 控制器
+现在我们有了正常运行的 Spring 项目，我们需要  [创建一个控制器](https://spring.io/guides/gs/serving-web-content/#initial) 来处理 Web 请求。
 
-### Create our Controller
-One important thing to note here is that you don't need to tell your Spring Application class about your (new) Spring Controller class. That is handled by the `@SpringBootApplication` annotation in the Application class which also consists of other annotations, including `@ComponentScan`. This means that the current package, and sub packages will be scanned for Spring components. It's a little unnerving when you first start using Spring but in time you'll get used to it once you have an appreciation of what Spring is doing behind the scenes for you.
+### 创建控制器
+这里要注意的一件事是，您不需要告诉 Spring Application 类有关 Spring Controller 类的信息。 这由 Application 类中的 `@SpringBootApplication` 注解处理，它还包含其他注解，包括 `@ComponentScan`。 这意味着将扫描当前包和子包以查找 Spring 组件。 当你第一次开始使用Spring时，这有点令人不安，但随着时间的推移，一旦你了解了 Spring 在幕后为你所做的一切，你就会习惯它。
 
-1) Create a new Java class in the same place as your `HelloWorldApplication.java` class called `HelloWorldController.java`.
+1）在 `HelloWorldApplication.java` 的同一位置创建一个新的名为 `HelloWorldController.java` 的类。
 
-2) The first thing we need to do is tell Spring that this is a REST Controller, so you need to add a class level annotation of `@RestController`. This annotation means this class will be picked up by the component scan, because it's in the same package as our Application class. Our REST Controller, `HelloWorldController`, will therefore be available from the application context.
+2）我们需要做的第一件事是告诉 Spring 这是一个 REST 控制器，所以你需要添加一个类级注解 `@RestController`。 它意味着组件扫描将选取此类，因为它与我们的 Application 类位于同一包中。 因此，我们的 REST 控制器 `HelloWorldController`，可以从应用程序的上下文中使用。
 
-3) The next step is to create a method that will tell Spring that if we go the root of our webserver, we would like to see the string _Hello World from Spring Boot_. To do that we need to add a method with a `@RequestMapping` annotation like our `helloWorld` one here:
+3）下一步是创建一个方法，该方法将告诉 Spring，如果我们使用Web服务器的根目录，我们希望看到字符串 _Hello World from Spring Boot_。 为此，我们需要添加一个带有 `@RequestMapping` 注解的方法，比如 `helloWorld`：
 
 ```java
 package com.example.helloworld;
@@ -39,13 +39,13 @@ public class HelloWorldController {
   }
 }
 ```
-4) Now we need to re-run our Spring application. You might need to stop it first if it's still running from the previous step. You can run it again with **Ctrl**+**R** (macOS), or **Shift**+**F10** (Windows/Linux).
+4）现在我们需要重新运行 Spring 应用程序。 如果它从上一个教程开始时就仍在运行状态，则需要先停止它。 您可以使用 **Ctrl**+**R**（macOS），或 **Shift**+**F10**（Windows/Linux）再次运行它。
 
-5) When you go to the browser, enter the following URL `localhost:8080`. You should see your text being returned:
+5）当您打开浏览器后，请输入以下URL `localhost:8080`。 您应该会看到返回的文本：
 
-![Hello World being displayed in the browser](hello-world-text.png)
+![浏览器中显示的 Hello World](hello-world-text.png)
 
-6) Assuming that's working correctly, you can start to get more adventurous. Try adding this new code below your first method:
+6）如果它工作正常，您可以开始更多新的尝试。 尝试在第一个方法下面添加此新代码：
 
 ```java
 @RequestMapping("/goodbye")
@@ -54,6 +54,6 @@ public String helloWorld(){
 }
 ```
 
-7) Now run your application again. At the root you should still see _Hello World from Spring Boot_ because the `@RequestMapping` is _/_ indicating root. However, if you now type in `localhost:8080/goodbye`, you should see _Goodbye from Spring Boot_.
+7） 现在再次运行您的应用程序。 在根目录中，您仍然应该看到 _Hello World from Spring Boot_，因为 `@RequestMapping` 是 _/_ 代表根目录。 但是，如果您现在输入 `localhost:8080/goodbye`，您应该会看到 _Goodbye from Spring Boot_。
 
-就是这样！ You're done, congratulations on creating your first Spring Application and serving some text in the browser! In the next section we'll create a test for our application. 
+就是这样！ 您已经完成了，恭喜您创建了第一个 Spring 应用程序并在浏览器中显示了一些文本！ 在下一节中，我们将为应用程序创建一个测试。 

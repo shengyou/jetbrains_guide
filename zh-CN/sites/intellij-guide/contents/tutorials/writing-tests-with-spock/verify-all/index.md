@@ -1,19 +1,19 @@
 ---
 type: TutorialStep
 date: 2021-05-20
-title: Verify All
+title: 全验证
 technologies: [ ]
 topics:
   - testing
 author: tg
-subtitle: Test frameworks often stop the test at the first failure. Find out how to run all conditions to see which pass and which fail.
+subtitle: 测试框架通常会在第一次失败时停止测试， 了解如何运行所有条件以查看哪些通过和哪些失败。
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
   url: https://youtu.be/i5Qu3qYOfsM?start=1893
 ---
 
-Let's look at how to make sure all our assertions are run, regardless of whether one of them fails. Try this test (note that with string method names we can easily add quotes and other special characters).
+让我们看一下如何确保所有断言都被运行，无论是否有断言失败。 试试这个测试（请留意，使用字符串形式的方法名，我们就可以轻松地添加引号和其他特殊字符）。
 
 ```groovy
 def "should demonstrate 'verifyAll'"() {
@@ -32,7 +32,7 @@ def "should demonstrate 'verifyAll'"() {
 }
 ```
 
-We can replace our `with()` call with [verifyAll()](https://spockframework.org/spock/docs/2.0/all_in_one.html#_using_verifyall_to_assert_multiple_expectations_together) instead. Run this (the code above should fail) and see what happens - not only does the number of sides assertion fail, but the check on the renderer also fails.
+我们可以将 `with()` ，改为 [verifyAll()](https://spockframework.org/spock/docs/2.0/all_in_one.html#_using_verifyall_to_assert_multiple_expectations_together)。 运行（上面的代码应该失败）并查看结果会怎样 - 不仅 numberOfSides 断言失败，而且对 renderer 的检查也是失败。
 
 ``` 
 org.opentest4j.MultipleFailuresError: Multiple Failures (2 failures)
@@ -50,9 +50,9 @@ renderer == null
 Mock for type 'Renderer' named 'mockRenderer'
 ```
 
-With `verifyAll`, all assertions are run and we can see which fail and which pass. This can help us when we're iterating quickly between writing and fixing tests.
+使用 `verifyAll`，所有断言都会运行，我们可以看到哪个失败和哪个通过。 这可以帮助我们在编写和修复测试之间快速迭代。
 
-Go back and fix this test:
+返回测试并进行修复：
 
 ```groovy
 then:
@@ -62,6 +62,6 @@ verifyAll(polygon) {
 }
 ```
 
-(Note that this code differs slightly from the video, since using two variables called `renderer` made it really hard to see what was being tested)
+（请注意，此代码与视频略有不同，因为使用两个名称为  `renderer` 的变量使得很难看到正在测试的内容）
 
-Now we know how to check the output from all conditions. Next, let's look at how to set up or tear down our tests.
+现在我们知道如何检查所有条件的输出。 接下来，让我们看一下如何设置或解除我们的测试。

@@ -1,18 +1,18 @@
 ---
 type: TutorialStep
 date: 2021-05-20
-title: 与
+title: With
 technologies: [ ]
 topics: [ ]
 author: tg
-subtitle: Sometimes we want to check more than one value on an object. We can use `with` to do this.
+subtitle: 有时我们想检查一个对象上的多个值。 我们可以使用 “with” 来做到这点。
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
   url: https://youtu.be/i5Qu3qYOfsM?start=1834
 ---
 
-Let's look at one approach to testing multiple properties of a single object. We can change the previous test to the following:
+让我们来看一种测试单个对象中的多个属性的方法。 我们可以将之前的测试更改为以下内容：
 
 ```groovy
  def "should use a helper method"() {
@@ -30,14 +30,14 @@ Let's look at one approach to testing multiple properties of a single object. We
     }
 }
 ```
-We can use Spock's [with()](https://spockframework.org/spock/docs/2.0/all_in_one.html#_using_with_for_expectations) and a closure to check multiple values on the `polygon`. Inside this closure, we don't have to say `polygon.`, we just assert the property matches the expected value.
+我们可以使用 Spock 的 [with()](https://spockframework.org/spock/docs/2.0/all_in_one.html#_using_with_for_expectations) 来检查 `polygon`上的多个值。 在这个大括号中，我们不必用 `polygon` 的方式，我们只断言属性与预期值的匹配。
 
-Note that in this test the mock Renderer created in the `given` block is called `mockRenderer` - this is so that it's clear that the `renderer` in the `with` block is `polygon.renderer`, not the renderer from the test scope.
+请注意，此测试中，在 `given` 里创建的模拟渲染器称为 `mockRenderer` - 这样可以清楚地看出，在 `with` 区域里的 `renderer` 就是 `polygon.renderer`， 而不是整个测试范围中的 renderer。
 
-Change the test so it fails, so we can see what this looks like:
+然后更改测试以使其失败，这样我们就可以看到它应该是：
 
 ![](./24.png)
 
-As with the helper method, if the first assertion fails, it doesn't run any further assertions. This might be what you want from your test, if one value is wrong the whole test should fail regardless. However, sometimes we want to run all the assertions, so we can see exactly what's working and what's not.
+与 helper 方法一样，如果第一个断言失败，则不会运行下一步的断言。 这可能是您希望从测试中得到的，如果一个值是错误的，那么无论怎样，整个测试都应该失败。 但是，有时我们想要运行所有断言，以便我们可以确切地看到哪些成功，哪些失败。
 
-Now we have a simple mechanism for checking all the values of an object. However, sometimes we want to do multiple checks and make sure they all pass (or find out which fail), rather than failing at the first error. In the next section, we look at how to do that.
+现在我们有了一个简单的机制来检查一个对象里面所有的值。 但是，有时我们希望进行多次检查，并确保它们都通过（或找出那些失败的），而不是在第一个错误时就运行失败。 在下一节中，我们将介绍如何做到这点。

@@ -1,32 +1,32 @@
 ---
 type: TutorialStep
 date: 2021-05-20
-title: Walking Through Your Spring Boot Project
+title: 浏览您的 Spring Boot 项目
 technologies: [ ]
 topics: [ ]
 author: hs
-subtitle: Let's take a look at what IntelliJ IDEA has created for us and why.
+subtitle: 让我们来看看 IntelliJ IDEA 为我们创建了什么以及为什么它创建了这些。
 thumbnail: ./thumbnail.png
 longVideo:
   poster: ./poster_long.png
   url: https://youtu.be/XkO1ana4nqI
 ---
 
-## Project Walk-through
-In the previous step we asked IntelliJ IDEA to create us a Spring Boot project with **Spring Web** as a dependency. Let's now take a look at what has been automatically created, so that we can build on that understanding in the next step.
+## 项目一览
+在之前的步骤中，我们让 IntelliJ IDEA 为我们创建了一个 Spring Boot 项目，包含有一个 **Spring web** 依赖项。 现在让我们看一下已经自动创建了的内容，以便我们在下一步可以在此基础上进行构建。
 
-Let's take a look around some aspects of the project. The easiest way to do this is from the Project tool window which you can access with **⌘1** on macOS, or **Alt**+**1** on Windows and Linux. We will look at:
+让我们来看看这个项目的一些方面。 最简单的方法是通过项目工具窗口来查看，您可以在 macOS 上使用 **⌘1**，或在 Windows 和 Linux 上使用 **Alt**+**1** 来访问它。 我们将看看：
 
-- The .mvn Folder
-- The pom.xml File
+- .mvn 文件夹
+- pom.xml 文件
 - HelloWorldApplication.java
 - HelloWorldApplicationTests.java
 
-### The .mvn Folder
-This folder has been created because Spring Boot uses the Maven wrapper when you create a Spring Boot project with the Maven build system. This means you don't have to install Maven locally to run your Spring Boot project. You should commit this project to version control, but you can ignore it from now on.
+### .mvn 文件夹
+这个文件之所以被创建是因为当您使用 Maven 构建系统创建 Spring Boot 项目时，Spring Boot 使用 Maven wrapper。 这意味这你不需要在本地安装 Maven 来运行您的 Spring Boot 项目。 您可以提交该项目到版本控制，但是您可以现在先忽略它。
 
-### The Maven pom.xml File
-This file is generated with the dependencies that you selected when we created this project.
+### Maven 的 pom.xml 文件
+这文件是用我们在创建此项目时您所选择的依赖项生成的。
 
 ```xml
 <dependencies>
@@ -42,15 +42,15 @@ This file is generated with the dependencies that you selected when we created t
   </dependency>
 </dependencies>
 ```
-The first dependency on `spring-boot-starter-web` is there because we selected **Spring Web** as a dependency. The second dependency on `spring-boot-starter-test` is something you get with any Spring application. It gives you the ability to create tests with various testing libraries.
+第一个依赖项 `spring-boot-starter-web` 在那里是因为我们选择了 **Spring Web** 作为依赖。 第二个依赖项 `spring-boot-starter-test` 是您在任何 Spring 应用程序中都可以获得的。 它使您能够使用各种测试库创建测试。
 
-It's very easy to add dependencies to your `pom.xml` file once you have created your Project. Use **⌘N** (macOS), or **Alt+Ins** (Windows/Linux) and then browse for your dependency. However, for our demo, these are the only dependencies that we need.
+当您创建项目后，将依赖项添加到 `pom.xml` 文件非常容易。 使用 **⌘N** （macOS）或 **Alt+Ins**（Windows/Linux），然后浏览您的依赖项。 然而对于我们的演示，这些是我们唯一需要的依赖。
 
 
-### The SpringHelloWorldDemoApplication.java File
-Inside your **main** > **java** > **com.example.helloworld** file structure you'll see your `HelloWorldApplication.java` file. Let's take a look in more detail.
+### SpringHelloWorldDemoApplication.java 文件
+在您的 **main** > **java** > **com.example.helloworld** 文件结构，您将可以看到您的 `HelloWorldApplication.java` 文件。 让我们更详细地看一下。
 
-This is what your Java file will look like. The name will be whatever your called the file with _Application_ appended to it.
+这就是您的 Java 文件的模样。 该名称将是您对这个文件的称呼，并在其后面加上 _Application_。
 
 ```java
 package com.example.helloworld;
@@ -67,32 +67,32 @@ public class HelloWorldApplication {
 } 
 ```
 
-We've got our package at the top of the class as you'd expect followed by our import statements.
+正如你所期望的那样，我们的软件包在类的顶部，然后是我们的导入语句。
 
-This `@SpringBootApplication` annotation  enables additional Spring Boot functionality which is useful to know in case you find yourself troubleshooting your code.
+`@SpringBootApplication` 注解启用了额外的 Spring Boot 功能，在您发现您在故障排除您的代码时，了解这些功能是非常有用的。
 
-The main line here is: `SpringApplication.run(HelloWorldApplication.class, args);`
+最重要的一行是：`SpringApplication.run(HelloWorldApplication.class, args);`
 
-This makes a call to SpringBoot's `run` method, and we need to pass the main class of our project to Spring, in this case, it's the same class.
+这会调用 SpringBoot 的 `run` 方法，并且我们需要将项目的 main 类传递给 Spring，在这个例子里，它是同一个类。
 
-When you run this method, Spring looks at what Maven has pulled in to the class path from the dependencies in our pom.xml file among other things, and makes assumptions about the shape of your project from there. There are a bunch of _transitive_ dependencies that Maven can pull in based on what Spring finds on your class path and the `application.properties` file. Transitive dependencies are dependencies that your dependencies are reliant on.
+当您运行这个方法，Spring 会查看 Maven 从我们的 pom.xml 文件里的依赖项中加入的类路径和其他的，然后从那里对您的项目构造作出假设。 Maven 可以根据 Spring 在您的类路径和 `application.properties` 文件中发现的内容，加入大量的_传递_依赖项。 传递依赖项是依赖项所依赖的依赖项。
 
-For example, we have a dependency in our Maven pom.xml called  `spring_boot_starter_web`. That in turn, has a transitive dependency on `spring-boot-starter-tomcat`. In this instance, when the Spring `run` method is called, it checks the class path and your `application.properties` file (which is empty) among other things, and sees that you want a Tomcat webserver, so it creates one for you.
+例如，我们在 Maven 的 pom.xml 中有一个依赖项称为  `spring_boot_starter_web`。 它有一个传递依赖项 `spring-boot-starter-tomcat`。 在这个例子里，当 Spring `run` 方法被调用时，它检查类路径和您的 `application.properties` 文件（它是空的）和其他的，然后发现您想要一个 Tomcat 网站服务器，所以它为您创建了一个。
 
-### The HelloWorldApplicationTests.java File
-If you head down to the **test** > **java** > **com.example.springhelloworlddemo** folder you'll see you have another class called `SpringHelloWorldDemoApplicationTests.java`. This is a test you get for free with Spring Boot. It checks if the Application Context can start, it will fail if not. The test can be a useful starting point for creating your own integration tests.
+### HelloWorldApplicationTests.java 文件
+如果您查看 **test** > **java** > **com.example.springhelloworlddemo** 文件夹，您可以看到您有另外一个类叫 `SpringHelloWorldDemoApplicationTests.java`。 这是您使用 Spring Boot 时免费获得的测试。 它检查应用程序的上下文是否可以启动，如果不能，它将失败。 该测试可以成为创建您自己的集成测试的一个有用的起点。
 
-## Running your Spring Boot Application
-We have the basics of our Spring Boot Application at this point. You can run it with **Ctrl**+**R** (macOS), or **Shift**+**F10** (Windows/Linux). Alternatively you can use the gutter icons:
+## 运行您的 Spring Boot 应用程序
+此时，我们已经有了 Spring Boot 应用程序的基础知识。 您可以使用 **Ctrl**+**R**（macOS），或 **Shift**+**F10**（Windows/Linux）运行它。 或者，您可以使用间距图标：
 
-![Gutter icon to run the application](gutter-icon-run-application.png)
+![用间距图标运行应用程序](gutter-icon-run-application.png)
 
-The application will run using the Tomcat webserver. You can verify it's working by going to your web browser and typing `localhost:8080`. Port 8080 is the default port for Tomcat.
+该应用程序将使用 Tomcat 网站服务器运行。 您可以通过 Web 浏览器并输入 `localhost:8080` 来验证它是否正常工作。 8080 是 Tomcat 的默认端口。
 
-You should get a 404 response which will look similar to this:
+您应该会得到一个 404 响应，大概会是下面的样子：
 
-![White label 404 response](white-label-404-response.png)
+![White label 404 响应](white-label-404-response.png)
 
-We're getting this page because we have support for REST Controllers with the `spring-boot-starter-web` dependency, but we also need to create a controller and add a request mapping for that controller. We will do both of those things in the next step.
+我们之所以获得此页面，是因为我们有支持 REST 控制器的 `spring-boot-starter-web` 依赖项，但我们还需要创建一个控制器并为该控制器添加请求映射。 我们将在下一步中执行这两项操作。
 
-Lastly, before we do any more development it's a good idea to stop your server from running. You can do this with **⌘F2** (macOS), or **Ctrl**+**F2** on Windows and Linux. 
+最后，在我们进行任何进一步的开发之前，最好先停止服务器运行。 您可以按 **⌘F2**（macOS），或 **Ctrl**+**F2**（Windows、Linux）来停止服务。 

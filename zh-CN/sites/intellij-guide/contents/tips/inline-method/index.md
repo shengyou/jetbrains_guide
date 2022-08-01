@@ -1,0 +1,33 @@
+---
+date: 2021-01-08
+title: 内联方法
+technologies:
+  - java
+topics:
+  - 重构
+author: hs
+subtitle: 内联方法
+thumbnail: ./thumbnail.png
+cardThumbnail: ./card.png
+shortVideo:
+  poster: ./tip.png
+  url: https://youtu.be/wSuqsDyX2nc
+seealso:
+  - 
+    title: (video) Inline Method Refactoring in IntelliJ IDEA
+    href: https://www.youtube.com/watch?v=uYsFlbXJbog
+  - 
+    title: (video) IntelliJ IDEA Everyday Refactorings
+    href: https://www.youtube.com/watch?v=rPq7fBo5JVs
+  - 
+    title: (video) IntelliJ IDEA 3 Ways to Simplify Your Code
+    href: https://www.youtube.com/watch?v=HgWU25YwDfc
+  - 
+    title: IntelliJ IDEA Help - Inline
+    href: https://www.jetbrains.com/help/idea/inline.html
+leadin: |
+  按**⌥⌘N**（macOS）， 或**Ctrl+Alt+N**（Windows/Linux）， 来进行内联方法。
+
+  您可以使用相同的快捷方式、来对变量、字段和常量进行内联。
+---
+

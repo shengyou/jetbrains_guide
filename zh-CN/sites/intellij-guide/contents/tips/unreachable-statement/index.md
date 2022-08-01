@@ -1,0 +1,22 @@
+---
+date: 2021-01-08
+title: 重构无法用到的语句
+technologies:
+  - java
+topics:
+  - 重构
+author: hs
+subtitle: 使用快速意图来删除冗余代码
+thumbnail: ./thumbnail.png
+cardThumbnail: ./card.png
+shortVideo:
+  poster: ./tip.png
+  url: https://youtu.be/qquQH1aDvjs
+seealso:
+  - 
+    title: (video) IntelliJ IDEA Pro Tips Alt Enter
+    href: https://www.youtube.com/watch?v=pWHgNm6aGdo
+leadin: |
+  您可以在冗余的条件表达式上使用 **⌥⏎** (macOS) 或 **Alt+Enter** (Windows/Linux) 来显示上下文操作的选项。 You can then remove the redundant code.
+---
+
